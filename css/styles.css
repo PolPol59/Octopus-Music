@@ -19,28 +19,26 @@ main {
   padding-left: 1em;
 }
 
-/*Fotos del header*/
-.banner {
-  position: relative;
-  width: 21.9em;
-  height: 20em;
-}
 
 header {
-  background-color: #99582a;
+  background-image:linear-gradient(to top,#99582a, #FFE6A7) ;
 }
 
 /*barra de navegación*/
+
 .navbar {
-  position: relative;
-  display: inline-block;
-  margin-left: 8.5em;
-  margin-right: 5em;
-  margin-top: 2em;
-  background-color: #99582a;
+  padding-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   font-size: 20px;
   text-decoration: none;
   color: aliceblue;
+}
+
+a {
+  text-decoration: none;
 }
 
 .navbar2 {
@@ -53,7 +51,6 @@ header {
   text-decoration: none;
   color: black
 }
-
 
 ul {
   list-style: none;
@@ -68,35 +65,76 @@ h1 {
   color: black;
 }
 
+.index {
+  display:grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 320px 0.3fr;
+  grid-template-areas: ". bienvenido ."
+                       ". horario ."
+                       "sucursal1 . sucursal2";
+}
+
+.bienvenido {
+  grid-area: bienvenido;
+}
+
 .titulosec {
   color: aliceblue;
   padding-bottom: 1em;
+  font-size: 4em;
 }
 
 .texto {
   font-family: "Playfair Display", serif;
   color: aliceblue;
+  font-size: 2em;
+  padding-top: 0.5em;
 }
 
 h2 {
   margin-top: 2em;
   font-family: "Saira", sans-serif;
   color: aliceblue;
+  font-size: 3em;
+  text-decoration: underline;
+}
+
+.horario {
+  grid-area: horario;
+  display:flex;
+  justify-content: center;
 }
 
 .sucursal {
-  margin-top: 0.5em;
   font-weight: bold;
   color: aliceblue;
+  grid-area: sucursal1;
+  text-decoration: underline;
+}
+
+.sucursal1 {
+  font-weight: bold;
+  color: aliceblue;
+  grid-area: sucursal1;
+  font-size: 3em;
+}
+
+.sucursal2 {
+  font-weight: bold;
+  color: aliceblue;
+  grid-area: sucursal2;
+  font-size: 3em;
 }
 
 footer {
   margin-top: 2em;
-  font-size: 1.5em;
-  font-weight: 100;
+  font-size: 2em;
+  font-weight: 400;
   text-align: center;
-  background-color: #99582a;
+  background-image:linear-gradient(to top,#99582a, #FFE6A7) ;
   font-family: "Saira", sans-serif;
+  grid-area: footer;
+  color:black
 }
 
 /*----------Productos----------*/
