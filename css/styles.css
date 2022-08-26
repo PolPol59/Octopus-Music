@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #ffe6a7; */
+  background-image: url(../images/fondo.jpg);
+  background-attachment: fixed;
+  position: relative;
+  background-size: cover;
+}
+
+main {
+  padding-left: 1em;
+}
+
+/*Fotos del header*/
+.banner {
+  position: relative;
+  width: 21.9em;
+  height: 20em;
+}
+
+header {
+  background-color: #99582a;
+}
+
+/*barra de navegación*/
+.navbar {
+  position: relative;
+  display: inline-block;
+  margin-left: 8.5em;
+  margin-right: 5em;
+  margin-top: 2em;
+  background-color: #99582a;
+  font-size: 20px;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.navbar2 {
+  position: relative;
+  display: inline-block;
+  margin-left: 8.5em;
+  margin-right: 5em;
+  margin-top: 2em;
+  font-size: 20px;
+  text-decoration: none;
+  color: black
+}
+
+
+ul {
+  list-style: none;
+  color: aliceblue;
+}
+
+h1 {
+  text-align: center;
+  margin-top: em;
+  font-weight: bolder;
+  font-family: "Saira", sans-serif;
+  color: black;
+}
+
+.titulosec {
+  color: aliceblue;
+  padding-bottom: 1em;
+}
+
+.texto {
+  font-family: "Playfair Display", serif;
+  color: aliceblue;
+}
+
+h2 {
+  margin-top: 2em;
+  font-family: "Saira", sans-serif;
+  color: aliceblue;
+}
+
+.sucursal {
+  margin-top: 0.5em;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+footer {
+  margin-top: 2em;
+  font-size: 1.5em;
+  font-weight: 100;
+  text-align: center;
+  background-color: #99582a;
+  font-family: "Saira", sans-serif;
+}
+
+/*----------Productos----------*/
+
+.logo {
+  width: 4em;
+}
+
+.titulo {
+  text-align: center;
+  font-family: "Saira", sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+.header2 {
+  background-image: url(../images/fondo2.jpg);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar2 {
+  /*consultar sobre como darle un color a la navbar*/
+  position: relative;
+  display: inline-block;
+  margin-left: 8.5em;
+  margin-right: 5em;
+  margin-top: 2em;
+  background-color: none;
+  font-size: 20px;
+}
+
+.navbarprod2 {
+  position: relative;
+  display: inline-block;
+  margin-left: 8.5em;
+  margin-right: 5em;
+  margin-top: 2em;
+  background-color: none;
+  font-size: 20px;
+}
+
+/* ul ul ul {
+    position: absolute;
+    display: none;
+    right: 0;
+}
+ ul ul ul li{
+    width: 5em;
+    display: block;
+    margin: 1px;
+}
+
+ul ul li:hover ul{
+    display: block;
+} */
+
+.criolla {
+  padding-top: 1em;
+  font-size: 1.5em;
+  list-style: none;
+  color: aliceblue;
+}
+
+.yamahaslgph {
+  margin-left: 52em;
+  position: relative;
+}
+
+.yamahaph {
+  margin-left: 51.9em;
+}
+
+.add {
+  font-size: 1.5em;
+  margin-left: 68.5em;
+}
+
+.precio {
+  text-align: right;
+}
+
+.fonsecaph {
+  width: 20em;
+  margin-left: 52.8em;
+}
+
+.graciaph {
+  margin-left: 59.3em;
+}
+
+/*------Sucursales-----*/
+
+.direccion {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 1.5em;
+}
+
+.tienda-ph {
+  width: 42em;
+  margin-left: 5em;
+}
+
+.tienda-ph2 {
+  width: 50em;
+  margin-left: 1em;
+}
+
+iframe {
+  margin-left: 13em;
+  width: 43em;
+}
+
+.suc-2 {
+  margin-left: 9em;
+  width: 44em;
+}
+
+/*------Carrito-------*/
+
+.fonsecacart {
+  width: 20em;
+  margin-left: 25em;
+  padding-bottom: 2em;
+}
+
+.graciacart {
+  width: 10em;
+  margin-left: 5em;
+  padding-bottom: 2em;
+}
+
+.yamahacart {
+  width: 20em;
+  margin-left: 5em;
+  padding-bottom: 2em;
+}
+
+.guitar-name1 {
+  display: inline-block;
+  list-style: none;
+  font-size: 1.5em;
+  margin-left: 21em;
+}
+
+.guitar-name2 {
+  display: inline-block;
+  list-style: none;
+  font-size: 1.5em;
+  margin-left: 9em;
+}
+
+.guitar-name3 {
+  display: inline-block;
+  list-style: none;
+  font-size: 1.5em;
+  margin-left: 7em;
+}
+
+.cart-button1 {
+  list-style: none;
+  font-size: 1.5em;
+  margin-left: 22em;
+}
+
+.cart-button2 {
+  list-style: none;
+  font-size: 1.5em;
+  margin-left: 12.5em;
+}
+
+.cart-button3 {
+  list-style: none;
+  font-size: 1.5em;
+  margin-left: 11em;
+}
+
+.camion {
+  width: 10em;
+}
+
+.retiro {
+  width: 12em;
+  margin-left: 10em;
+}
+
+.casilla1 {
+  width: 2.5em;
+  margin-left: 2em;
+  font-size: 1.5em;
+  display: inline-block;
+}
+
+.home {
+  margin-left: 12em;
+}
+
+.casilla2 {
+  width: 2em;
+  margin-left: 25em;
+}
+
+.sucursalb {
+  margin-left: 28em;
+  padding-top: 0em;
+  color: aliceblue;
+}
+
+.s-word {
+  font-size: 1.5em;
+}
+
+/* aside {
+    display: flex;
+    flex-flow: row;
+}
+
+.envio {
+    display: flex;
+    flex-flow: column;
+} */
+
+.action-button {
+  margin-left: 70em;
+  font-size: 1.5em;
+}
+
+.action-button2 {
+  margin-left: 64.5em;
+  font-size: 1.5em;
+}
+
+/*.action-button {
+    font-size: 1.5em;
+    display: flex;
+    text-align: right;
+    margin-left: 65em; 
+}*/
+
+/*--------Contacto-------*/
+
+.wsp {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.form {
+  margin-top: 1.5em;
+  margin-left: 28em;
+  font-size: 1.5em;
+}
+
+.form-text {
+  color: aliceblue;
+  text-align: right;
+}
+
+.e-mail {
+  margin-left: 0.5em;
+}
+
+.c-input {
+  font-size: 1em;
+}
+
+.send {
+  margin-left: 41.3em;
+  font-size: 1.5em;
+}
