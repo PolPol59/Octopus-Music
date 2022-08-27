@@ -228,15 +228,22 @@ ul ul li:hover ul{
   grid-area: yamahaslgph;
 }
 
-.guitar1 {
+.guitar2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 0.5fr;
-
+  grid-template-areas: "guitar2-text yamahaph"
+                       ". add";
 }
 
 .yamahaph {
   grid-area: yamahaph;
+  display: flex;
+  justify-content: right;
+}
+
+.guitar2-text {
+  grid-area: guitar2-text;
 }
 
 .add {
@@ -248,7 +255,17 @@ ul ul li:hover ul{
   margin-right: 2em;
 }
 
+       /* precios */
+
 .precio {
+  font-size: 1.5em;
+  margin-right: 0.5em;
+  display: flex;
+  justify-content: right;
+  padding-top: 10em;
+}
+
+.precio2 {
   font-size: 1.5em;
   margin-right: 0.5em;
   display: flex;
