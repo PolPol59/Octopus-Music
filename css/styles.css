@@ -217,7 +217,7 @@ ul ul li:hover ul{
 .guitar1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 0.5fr;
+  grid-template-rows: 1fr 0.4fr;
   grid-template-areas: "guitar1-text yamahaslgph"
                        ". add";
 }
@@ -231,7 +231,7 @@ ul ul li:hover ul{
 .guitar2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 0.5fr;
+  grid-template-rows: 1fr 0.4fr;
   grid-template-areas: "guitar2-text yamahaph"
                        ". add";
 }
@@ -242,8 +242,24 @@ ul ul li:hover ul{
   justify-content: right;
 }
 
+.precio {
+  font-size: 1.3em;
+  margin-right: 0.5em;
+  display: flex;
+  justify-content: right;
+  padding-top: 10.9em; 
+}
+
 .guitar2-text {
   grid-area: guitar2-text;
+}
+ 
+.precio2 {
+  font-size: 1.3em;
+  margin-right: 0.5em;
+  display: flex;
+  justify-content: right;
+  padding-top: 10.9em;
 }
 
 .add {
@@ -255,31 +271,66 @@ ul ul li:hover ul{
   margin-right: 2em;
 }
 
-       /* precios */
-
-.precio {
+.add2 {
   font-size: 1.5em;
-  margin-right: 0.5em;
+  grid-area: add;
   display: flex;
-  justify-content: right;
-  padding-top: 10em;
+  justify-content:right;
+  font-stretch: extra-expanded;
+  margin-left: 5em
 }
 
-.precio2 {
-  font-size: 1.5em;
-  margin-right: 0.5em;
-  display: flex;
-  justify-content: right;
-  padding-top: 10em;
+.guitar3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.4fr;
+  grid-template-areas: "guitar3-text fonsecaph"
+                       ". add";
+}
+
+.guitar3-text {
+  grid-area: guitar3-text;
 }
 
 .fonsecaph {
-  width: 20em;
-  margin-left: 52.8em;
+  grid-area: fonsecaph;
+  display: flex;
+  justify-content: right;
+}
+
+.precio3 {
+  font-size: 1.3em;
+  margin-right: 0.5em;
+  display: flex;
+  justify-content: right;
+  padding-top: 10.9em;
+}
+
+.guitar4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:"guitar4-text graciaph"
+                      ". add";
+}
+
+.guitar4-text {
+  grid-area:guitar4-text;
 }
 
 .graciaph {
-  margin-left: 59.3em;
+  grid-area: graciaph;
+  display: flex;
+  justify-content: right;
+  margin-right: 0.5em;
+}
+
+.precio4 {
+  font-size: 1.3em;
+  margin-right: 0.5em;
+  display: flex;
+  justify-content: right;
+  padding-top: 17em;
 }
 
 /*------Sucursales-----*/
