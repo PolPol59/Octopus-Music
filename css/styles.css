@@ -19,9 +19,8 @@ main {
   padding-left: 1em;
 }
 
-
 header {
-  background-image:linear-gradient(to top,#99582a, #FFE6A7);
+  background-image: linear-gradient(to top, #99582a, #ffe6a7);
 }
 
 /*barra de navegación*/
@@ -69,12 +68,13 @@ h1 {
 }
 
 .index {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 320px 0.3fr;
-  grid-template-areas: ". bienvenido ."
-                       ". horario ."
-                       "sucursal1 . sucursal2";
+  grid-template-areas:
+    ". bienvenido ."
+    ". horario ."
+    "sucursal1 . sucursal2";
 }
 
 .bienvenido {
@@ -104,7 +104,7 @@ h2 {
 
 .horario {
   grid-area: horario;
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
@@ -134,10 +134,10 @@ footer {
   font-size: 2em;
   font-weight: 400;
   text-align: center;
-  background-image:linear-gradient(to top,#99582a, #FFE6A7) ;
+  background-image: linear-gradient(to top, #99582a, #ffe6a7);
   font-family: "Saira", sans-serif;
   grid-area: footer;
-  color:black
+  color: black;
 }
 
 /*----------Productos----------*/
@@ -160,7 +160,6 @@ footer {
   grid-template-rows: 1fr;
   grid-template-areas: "logo titulo .";
 }
-
 
 .navbarprod2 {
   position: relative;
@@ -208,8 +207,9 @@ ul ul li:hover ul{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 0.4fr;
-  grid-template-areas: "guitar1-text yamahaslgph"
-                       ". add";
+  grid-template-areas:
+    "guitar1-text yamahaslgph"
+    ". add";
 }
 
 .yamahaslgph {
@@ -222,8 +222,9 @@ ul ul li:hover ul{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 0.4fr;
-  grid-template-areas: "guitar2-text yamahaph"
-                       ". add";
+  grid-template-areas:
+    "guitar2-text yamahaph"
+    ". add";
 }
 
 .yamahaph {
@@ -237,13 +238,13 @@ ul ul li:hover ul{
   margin-right: 0.5em;
   display: flex;
   justify-content: right;
-  padding-top: 10.9em; 
+  padding-top: 10.9em;
 }
 
 .guitar2-text {
   grid-area: guitar2-text;
 }
- 
+
 .precio2 {
   font-size: 1.3em;
   margin-right: 0.5em;
@@ -265,17 +266,18 @@ ul ul li:hover ul{
   font-size: 1.5em;
   grid-area: add;
   display: flex;
-  justify-content:right;
+  justify-content: right;
   font-stretch: extra-expanded;
-  margin-left: 5em
+  margin-left: 5em;
 }
 
 .guitar3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 0.4fr;
-  grid-template-areas: "guitar3-text fonsecaph"
-                       ". add";
+  grid-template-areas:
+    "guitar3-text fonsecaph"
+    ". add";
 }
 
 .guitar3-text {
@@ -300,12 +302,13 @@ ul ul li:hover ul{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas:"guitar4-text graciaph"
-                      ". add";
+  grid-template-areas:
+    "guitar4-text graciaph"
+    ". add";
 }
 
 .guitar4-text {
-  grid-area:guitar4-text;
+  grid-area: guitar4-text;
 }
 
 .graciaph {
@@ -350,7 +353,6 @@ ul ul li:hover ul{
   justify-content: space-around;
 }
 
-
 .tienda-ph {
   width: 42em;
 }
@@ -364,130 +366,139 @@ iframe {
 }
 
 .suc-2 {
-  display:flex;
-  justify-content: space-around; 
+  display: flex;
+  justify-content: space-around;
 }
 
 /*------Carrito-------*/
 
+.titulo-cart {
+  color: aliceblue;
+  padding-bottom: 1em;
+  font-size: 3em;
+  text-decoration: underline;
+}
+
+.cart-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "fonseca gracia yamaha";
+}
+
+.fonseca {
+  grid-area: fonseca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gracia {
+  grid-area: gracia;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.yamaha {
+  grid-area: yamaha;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .fonsecacart {
-  width: 20em;
-  margin-left: 25em;
-  padding-bottom: 2em;
+  width: 22em;
 }
 
 .graciacart {
-  width: 10em;
-  margin-left: 5em;
-  padding-bottom: 2em;
+  width: 12em;
 }
 
 .yamahacart {
-  width: 20em;
-  margin-left: 5em;
-  padding-bottom: 2em;
+  width: 22em;
 }
 
-.guitar-name1 {
-  display: inline-block;
-  list-style: none;
+.guitar-name {
+  padding-top: 0.5em;
+  display: flex;
+  justify-content: center;
   font-size: 1.5em;
-  margin-left: 21em;
+  color: aliceblue;
 }
 
-.guitar-name2 {
-  display: inline-block;
+.cart-button {
+  margin-top: 0.5em;
   list-style: none;
+  text-decoration: none;
   font-size: 1.5em;
-  margin-left: 9em;
 }
 
-.guitar-name3 {
-  display: inline-block;
-  list-style: none;
-  font-size: 1.5em;
-  margin-left: 7em;
+.envio-retiro {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "iconos . boton1";
 }
 
-.cart-button1 {
-  list-style: none;
-  font-size: 1.5em;
-  margin-left: 22em;
+.iconos {
+  grid-area: iconos;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.cart-button2 {
-  list-style: none;
-  font-size: 1.5em;
-  margin-left: 12.5em;
-}
-
-.cart-button3 {
-  list-style: none;
-  font-size: 1.5em;
-  margin-left: 11em;
+.envio-camion {
+  display: flex;
+  flex-direction: column;
+  justify-self: left;
+  align-items: center;
 }
 
 .camion {
-  width: 10em;
+  width: 7em;
+}
+
+.retiro-sucursal {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  margin-right: 7em;
+  align-items: center;
+}
+
+.text {
+  font-size: 2em;
+  color: aliceblue;
+  margin-bottom: 0.3em;
 }
 
 .retiro {
-  width: 12em;
-  margin-left: 10em;
-}
-
-.casilla1 {
-  width: 2.5em;
-  margin-left: 2em;
-  font-size: 1.5em;
-  display: inline-block;
-}
-
-.home {
-  margin-left: 12em;
-}
-
-.casilla2 {
-  width: 2em;
-  margin-left: 25em;
-}
-
-.sucursalb {
-  margin-left: 28em;
-  padding-top: 0em;
-  color: aliceblue;
+  width: 8em;
 }
 
 .s-word {
   font-size: 1.5em;
+  color: aliceblue;
 }
-
-/* aside {
-    display: flex;
-    flex-flow: row;
-}
-
-.envio {
-    display: flex;
-    flex-flow: column;
-} */
 
 .action-button {
-  margin-left: 70em;
-  font-size: 1.5em;
+  display: flex;
+  justify-content: end;
+  justify-items: end;
+  font-size: 1.2em;
+  margin-bottom: 0.3em;
 }
 
 .action-button2 {
-  margin-left: 64.5em;
-  font-size: 1.5em;
+  display: flex;
+  justify-content: end;
+  justify-items: end;
+  font-size: 1.2em;
 }
-
-/*.action-button {
-    font-size: 1.5em;
-    display: flex;
-    text-align: right;
-    margin-left: 65em; 
-}*/
 
 /*--------Contacto-------*/
 
