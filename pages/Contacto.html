@@ -10,28 +10,30 @@
 </head>
 
 <body>
-    <header class="header2">
-        <img class="logo" src="../images/logo.png" alt="logo de una corchea">
-        <h1 class="titulo">Octopus Music</h1>
+    <header>
+        <section class="logo-titulo">
+            <img class="logo" src="../images/logo.png" alt="logo de una corchea">
+            <h1 class="titulo">Octopus Music</h1>
+        </section>
         <nav>
-            <ul>
+            <ul class="navbar2">
                 <a href="../index.html"><li class="navbar2">Inicio</li></a>
                 <a href="../pages/Productos.html"><li class="navbar2">Productos</li></a>
                 <a href="../pages/Sucursales.html"><li class="navbar2">Sucursales</li></a>
                 <a href="../pages/Carrito.html"><li class="navbar2">Carrito</li></a>
-               <a href="../pages/Contacto.html"> <li class="navbar2">Contacto</li></a>
+               <a href="../pages/Contacto.html"> <li class="navbar-select">Contacto</li></a>
             </ul>
         </nav>
     </header>
     <main>
-        <h1 class="titulosec">¿Buscas algo en específico?</h1>
-        <h1 class="titulosec">¡Escrbinos y lo conseguimos!</h1>
+        <h1 class="titulo-contacto">¿Buscas algo en específico?</h1>
+        <h1 class="titulo-contacto">¡Escrbinos y lo conseguimos!</h1>
         <section>
             <h2 class="wsp">Whatsapp: +54 9 11-8442-5895</h2>
         </section>
         <section>
-            <h1 class="titulosec">O envianos un correo</h1>
-            <aside>
+            <h1 class="titulo-contacto">O envianos un correo</h1>
+            <section class="form">
                 <form action="../index.html">
                     <div class="form">
                         <label class="form-text" for="text">Nombre:</label>
@@ -43,11 +45,13 @@
                     </div>
                     <div class="form">
                         <label class="form-text" for="">Consulta:</label>
-                        <textarea class="c-input" rows="5" cols="25"></textarea>
+                        <textarea class="c-input" rows="5" cols="26"></textarea>
                     </div>
-                    <button class="send">Enviar</button>
                 </form>
-            </aside>
+            </section>
+            <div class="send">
+            <button class="send">Enviar</button>
+        </div>
         </section>
     </main>
     <footer>©Todos los derechos reservados. Octopus Music S.A. 2022.</footer>
