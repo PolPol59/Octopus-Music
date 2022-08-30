@@ -79,6 +79,19 @@ h1 {
 
 .bienvenido {
   grid-area: bienvenido;
+  padding-top: 1em;
+  animation-name: bienvenido;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: initial;
+  animation-direction: normal;
+}
+
+@keyframes bienvenido {
+  0% {
+    transform: translate(0, 20em);
+  }
 }
 
 .titulosec {
@@ -227,6 +240,7 @@ ul ul li:hover ul{
     ". add";
 }
 
+
 .yamahaph {
   grid-area: yamahaph;
   display: flex;
@@ -363,6 +377,13 @@ ul ul li:hover ul{
 
 iframe {
   width: 43em;
+  height: 28em;
+  transition: height 1s, width 1s;
+}
+
+iframe:hover {
+  width: 48em;
+  height: 33em;
 }
 
 .suc-2 {
@@ -393,6 +414,7 @@ iframe {
   align-items: center;
   flex-direction: column;
 }
+
 
 .gracia {
   grid-area: gracia;
@@ -543,3 +565,5 @@ iframe {
   font-size: 1.4em;
   margin-top: 1em;
 }
+
+
