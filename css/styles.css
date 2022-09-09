@@ -1,5 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Saira:wght@200&display=swap");
+.index {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 320px 0.3fr;
+  grid-template-areas: ". bienvenido ." ". horario ." "sucursal1 . sucursal2"; }
+  .index .bienvenido {
+    grid-area: bienvenido;
+    padding-top: 1em;
+    animation-name: bienvenido;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: initial;
+    animation-direction: normal; }
+
+@keyframes bienvenido {
+  0% {
+    transform: translate(0, 20em); } }
+  .index .horario {
+    grid-area: horario;
+    display: flex;
+    justify-content: center; }
+  .index .sucursal, .index .sucursal1, .index .sucursal2 {
+    font-weight: bold;
+    color: aliceblue;
+    text-decoration: underline; }
+  .index .sucursal1 {
+    text-decoration: none;
+    grid-area: sucursal1;
+    font-size: 3em; }
+  .index .sucursal2 {
+    font-size: 3em;
+    text-decoration: none;
+    grid-area: sucursal2; }
+  .index .titulosec {
+    color: aliceblue;
+    padding-bottom: 1em;
+    font-size: 4em; }
+  .index .texto {
+    font-family: "Playfair Display", serif;
+    color: aliceblue;
+    font-size: 2em;
+    padding-top: 0.5em; }
+
 header {
   background-image: linear-gradient(to top, #99582a, #ffe6a7);
   text-decoration: none; }
@@ -11,7 +55,7 @@ header {
     font-size: 20px;
     text-decoration: none;
     color: aliceblue; }
-    header .navbar li, header .navbar-select li, header .navbar2 li {
+    header .navbar a, header .navbar-select a, header .navbar2 a {
       text-decoration: none; }
   header .navbar-select {
     font-weight: bold; }
@@ -26,3 +70,29 @@ body {
   background-attachment: fixed;
   position: relative;
   background-size: cover; }
+
+h1 {
+  text-align: center;
+  font-weight: bolder;
+  font-family: "Saira", sans-serif;
+  font-size: 1.5em; }
+
+h2 {
+  margin-top: 2em;
+  font-family: "Saira", sans-serif;
+  color: aliceblue;
+  font-size: 3em;
+  text-decoration: underline; }
+
+li {
+  list-style: none; }
+
+footer {
+  margin-top: 2em;
+  font-size: 2em;
+  font-weight: 400;
+  text-align: center;
+  background-image: linear-gradient(to top, #99582a, #ffe6a7);
+  font-family: "Saira", sans-serif;
+  grid-area: footer;
+  color: black; }

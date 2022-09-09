@@ -1,6 +1,7 @@
 header {
     background-image: linear-gradient(to top, #99582a, #ffe6a7);
     text-decoration: none;
+
     .navbar {
         padding-top: 1em;
         display: flex;
@@ -9,15 +10,21 @@ header {
         font-size: 20px;
         text-decoration: none;
         color: aliceblue;
-        li {
+
+        a {
             text-decoration: none;
         }
     }
+
     .navbar-select {
         @extend .navbar;
         font-weight: bold;
     }
+
     .navbar2 {
         @extend .navbar;
+
     }
+
+
 }

@@ -1,0 +1,67 @@
+.index {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 320px 0.3fr;
+    grid-template-areas:
+      ". bienvenido ."
+      ". horario ."
+      "sucursal1 . sucursal2";
+      .bienvenido {
+          grid-area: bienvenido;
+        padding-top: 1em;
+        animation-name: bienvenido;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: initial;
+        animation-direction: normal;
+        
+        
+        @keyframes bienvenido {
+        0% {
+          transform: translate(0, 20em);
+        }
+      }
+    }
+    
+    .horario {
+        grid-area: horario;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sucursal {
+        font-weight: bold;
+        color: $text-color;
+        text-decoration: underline;
+    }
+
+    .sucursal1 {
+         @extend .sucursal;
+         text-decoration: none;
+          grid-area: sucursal1;
+          font-size: $title-size-2;
+        }
+        .sucursal2 {
+            @extend .sucursal;
+            font-size: $title-size-2;
+            text-decoration: none;
+            grid-area: sucursal2;
+        }
+
+        .titulosec {
+            color: $text-color;
+            padding-bottom: 1em;
+            font-size: 4em;
+        }
+        .texto {
+            font-family: $font-family-2;
+            color: $text-color;
+            font-size: 2em;
+            padding-top: 0.5em;
+        }
+        
+    }
+
+                 // PRODUCTOS
+    
