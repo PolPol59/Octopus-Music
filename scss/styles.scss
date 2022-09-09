@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@200&display=swap");
+
+
+
+@import './header.scss';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/fondo.jpg);
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+}
