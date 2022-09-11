@@ -37,28 +37,86 @@
   .index .titulosec {
     color: aliceblue;
     padding-bottom: 1em;
-    font-size: 4em; }
+    font-size: 2.5em; }
   .index .texto {
     font-family: "Playfair Display", serif;
     color: aliceblue;
     font-size: 2em;
     padding-top: 0.5em; }
 
+.titulosec2 {
+  padding-bottom: 1em;
+  font-size: 2em;
+  color: aliceblue;
+  text-decoration: underline; }
+
+.guitar1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.4fr;
+  grid-template-areas: "guitar1-text yamahaslgph" ". add"; }
+  .guitar1 .guitar-text {
+    grid-area: guitar-text; }
+  .guitar1 .yamahaslgph {
+    grid-area: yamahaslgph; }
+
+.guitar2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.4fr;
+  grid-template-areas: "guitar2-text yamahaph" ". add"; }
+  .guitar2 .guitar2-text {
+    grid-area: guitar2-text; }
+  .guitar2 .yamahaph {
+    grid-area: yamahaph; }
+
+.guitar3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.4fr;
+  grid-template-areas: "guitar3-text fonsecaph" ". add"; }
+  .guitar3 .guitar3-text {
+    grid-area: guitar3-text; }
+  .guitar3 .fonsecaph {
+    grid-area: fonsecaph; }
+
+.guitar4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.4fr;
+  grid-template-areas: "guitar4-text graciaph" ". add"; }
+  .guitar4 .guitar4-text {
+    grid-area: guitar4-text; }
+  .guitar4 .graciaph {
+    grid-area: graciaph; }
+
 header {
   background-image: linear-gradient(to top, #99582a, #ffe6a7);
   text-decoration: none; }
+  header .logo-titulo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo titulo ."; }
+    header .logo-titulo .titulo {
+      grid-area: titulo; }
+    header .logo-titulo .logo {
+      width: 3em;
+      grid-area: logo; }
   header .navbar, header .navbar-select, header .navbar2 {
-    padding-top: 1em;
+    padding-top: 0.5em;
     display: flex;
     align-items: center;
     justify-content: space-around;
     font-size: 20px;
-    text-decoration: none;
     color: aliceblue; }
-    header .navbar a, header .navbar-select a, header .navbar2 a {
-      text-decoration: none; }
   header .navbar-select {
     font-weight: bold; }
+  header .navbar-text {
+    font-size: 20px;
+    transition: font-size 0.2s; }
+  header .navbar-text:hover {
+    font-size: 25px; }
 
 * {
   margin: 0;
@@ -75,7 +133,7 @@ h1 {
   text-align: center;
   font-weight: bolder;
   font-family: "Saira", sans-serif;
-  font-size: 1.5em; }
+  font-size: 3em; }
 
 h2 {
   margin-top: 2em;
@@ -87,6 +145,9 @@ h2 {
 li {
   list-style: none; }
 
+a {
+  text-decoration: none; }
+
 footer {
   margin-top: 2em;
   font-size: 2em;
@@ -94,5 +155,34 @@ footer {
   text-align: center;
   background-image: linear-gradient(to top, #99582a, #ffe6a7);
   font-family: "Saira", sans-serif;
-  grid-area: footer;
-  color: black; }
+  grid-area: footer; }
+
+.criolla {
+  padding-top: 1em;
+  font-size: 2em;
+  color: aliceblue; }
+
+.add, .add2 {
+  font-size: 1.5em;
+  grid-area: add;
+  display: flex;
+  justify-content: right;
+  font-stretch: extra-expanded;
+  margin-right: 2em; }
+
+.add2 {
+  margin-right: 0.5em; }
+
+.precio, .precio4 {
+  font-size: 1.3em;
+  margin-right: 0.5em;
+  display: flex;
+  justify-content: right;
+  padding-top: 10.9em; }
+
+.precio4 {
+  padding-top: 18em; }
+
+.guitar-photo {
+  display: flex;
+  justify-content: right; }

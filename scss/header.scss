@@ -2,18 +2,30 @@ header {
     background-image: linear-gradient(to top, #99582a, #ffe6a7);
     text-decoration: none;
 
+    .logo-titulo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "logo titulo .";
+
+        .titulo {
+            grid-area: titulo;
+        }
+
+        .logo {
+            width: 3em;
+            grid-area: logo;
+        }
+
+    }
+
     .navbar {
-        padding-top: 1em;
+        padding-top: 0.5em;
         display: flex;
         align-items: center;
         justify-content: space-around;
         font-size: 20px;
-        text-decoration: none;
-        color: aliceblue;
-
-        a {
-            text-decoration: none;
-        }
+        color: $text-color;
     }
 
     .navbar-select {
@@ -26,5 +38,13 @@ header {
 
     }
 
+    .navbar-text {
+        font-size: 20px;
+        transition: font-size 0.2s;
+    }
 
-}
+    .navbar-text:hover {
+        font-size: 25px;
+    }    
+
+    }

@@ -1,0 +1,10 @@
+@mixin guitar-order () {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.4fr;
+} 
+
+@mixin guitar-photo (){
+    display: flex;
+    justify-content: right;
+}

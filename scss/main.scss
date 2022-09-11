@@ -1,67 +1,139 @@
 .index {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 320px 0.3fr;
-    grid-template-areas:
-      ". bienvenido ."
-      ". horario ."
-      "sucursal1 . sucursal2";
-      .bienvenido {
-          grid-area: bienvenido;
-        padding-top: 1em;
-        animation-name: bienvenido;
-        animation-duration: 0.5s;
-        animation-timing-function: ease-in;
-        animation-delay: 0s;
-        animation-iteration-count: initial;
-        animation-direction: normal;
-        
-        
-        @keyframes bienvenido {
-        0% {
-          transform: translate(0, 20em);
-        }
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 320px 0.3fr;
+  grid-template-areas:
+    ". bienvenido ."
+    ". horario ."
+    "sucursal1 . sucursal2";
+
+  .bienvenido {
+    grid-area: bienvenido;
+    padding-top: 1em;
+    animation-name: bienvenido;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+
+
+    @keyframes bienvenido {
+      0% {
+        transform: translate(0, 20em);
       }
     }
-    
-    .horario {
-        grid-area: horario;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .sucursal {
-        font-weight: bold;
-        color: $text-color;
-        text-decoration: underline;
-    }
+  }
 
-    .sucursal1 {
-         @extend .sucursal;
-         text-decoration: none;
-          grid-area: sucursal1;
-          font-size: $title-size-2;
-        }
-        .sucursal2 {
-            @extend .sucursal;
-            font-size: $title-size-2;
-            text-decoration: none;
-            grid-area: sucursal2;
-        }
+  .horario {
+    grid-area: horario;
+    display: flex;
+    justify-content: center;
+  }
 
-        .titulosec {
-            color: $text-color;
-            padding-bottom: 1em;
-            font-size: 4em;
-        }
-        .texto {
-            font-family: $font-family-2;
-            color: $text-color;
-            font-size: 2em;
-            padding-top: 0.5em;
-        }
-        
+  .sucursal {
+    font-weight: bold;
+    color: $text-color;
+    text-decoration: underline;
+  }
+
+  .sucursal1 {
+    @extend .sucursal;
+    text-decoration: none;
+    grid-area: sucursal1;
+    font-size: $title-size-2;
+  }
+
+  .sucursal2 {
+    @extend .sucursal;
+    font-size: $title-size-2;
+    text-decoration: none;
+    grid-area: sucursal2;
+  }
+
+  .titulosec {
+    color: $text-color;
+    padding-bottom: 1em;
+    font-size: 2.5em;
+  }
+
+  .texto {
+    font-family: $font-family-2;
+    color: $text-color;
+    font-size: 2em;
+    padding-top: 0.5em;
+  }
+
+}
+
+
+// PRODUCTOS
+
+
+.titulosec2 {
+  padding-bottom: 1em;
+  font-size: 2em;
+  color: $text-color;
+  text-decoration: underline;
+}
+
+.guitar1 {
+  @include guitar-order;
+  grid-template-areas:
+    "guitar1-text yamahaslgph"
+    ". add";
+
+  .guitar-text {
+    grid-area: guitar-text;
+  }
+
+  .yamahaslgph {
+    grid-area: yamahaslgph;
+  }
+}
+
+.guitar2 {
+  @include guitar-order;
+  grid-template-areas:
+    "guitar2-text yamahaph"
+    ". add";
+
+  .guitar2-text {
+    grid-area: guitar2-text;
+  }
+
+  .yamahaph {
+    grid-area: yamahaph;
+  }
+}
+
+.guitar3 {
+  @include guitar-order;
+  grid-template-areas:
+    "guitar3-text fonsecaph"
+    ". add";
+
+  .guitar3-text {
+    grid-area: guitar3-text;
+  }
+
+  .fonsecaph {
+    grid-area: fonsecaph;
+  }
+}
+
+.guitar4 {
+  @include guitar-order;
+  grid-template-areas:
+    "guitar4-text graciaph"
+    ". add";
+    .guitar4-text {
+      grid-area: guitar4-text;
     }
+    .graciaph {
+      grid-area: graciaph;
+    }
+}
 
-                 // PRODUCTOS
-    
+
+
