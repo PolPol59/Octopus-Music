@@ -124,16 +124,59 @@
 
 .guitar4 {
   @include guitar-order;
+  grid-template-rows: 1fr;
   grid-template-areas:
     "guitar4-text graciaph"
     ". add";
-    .guitar4-text {
-      grid-area: guitar4-text;
-    }
-    .graciaph {
-      grid-area: graciaph;
-    }
+
+  .guitar4-text {
+    grid-area: guitar4-text;
+  }
+
+  .graciaph {
+    grid-area: graciaph;
+  }
 }
 
 
+// SUCURSALES
+
+
+.titulosuc {
+  font-size: $title-size-2;
+  color: $text-color;
+  padding-bottom: 0.5em;
+  text-decoration: underline;
+}
+
+iframe {
+  width: 48em;
+  height: 33em;
+  transition: height 1s, width 1s;
+}
+
+iframe:hover {
+  width: 53em;
+  height: 38em;
+}
+
+.direccion {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 2em;
+  text-decoration: none;
+}
+
+.direccion2 {
+  @extend .direccion;
+  padding-bottom: 0;
+}
+
+.tiendaph {
+  width: 42em;
+}
+.suc-1 {
+  display: flex;
+  justify-content: space-around;
+}
 

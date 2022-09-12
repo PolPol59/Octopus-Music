@@ -29,9 +29,9 @@
   .index .sucursal1 {
     text-decoration: none;
     grid-area: sucursal1;
-    font-size: 3em; }
+    font-size: 2.5em; }
   .index .sucursal2 {
-    font-size: 3em;
+    font-size: 2.5em;
     text-decoration: none;
     grid-area: sucursal2; }
   .index .titulosec {
@@ -84,11 +84,43 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 0.4fr;
+  grid-template-rows: 1fr;
   grid-template-areas: "guitar4-text graciaph" ". add"; }
   .guitar4 .guitar4-text {
     grid-area: guitar4-text; }
   .guitar4 .graciaph {
     grid-area: graciaph; }
+
+.titulosuc {
+  font-size: 2.5em;
+  color: aliceblue;
+  padding-bottom: 0.5em;
+  text-decoration: underline; }
+
+iframe {
+  width: 48em;
+  height: 33em;
+  transition: height 1s, width 1s; }
+
+iframe:hover {
+  width: 53em;
+  height: 38em; }
+
+.direccion, .direccion2 {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 2em;
+  text-decoration: none; }
+
+.direccion2 {
+  padding-bottom: 0; }
+
+.tiendaph {
+  width: 42em; }
+
+.suc-1 {
+  display: flex;
+  justify-content: space-around; }
 
 header {
   background-image: linear-gradient(to top, #99582a, #ffe6a7);
@@ -139,7 +171,7 @@ h2 {
   margin-top: 2em;
   font-family: "Saira", sans-serif;
   color: aliceblue;
-  font-size: 3em;
+  font-size: 2.5em;
   text-decoration: underline; }
 
 li {
