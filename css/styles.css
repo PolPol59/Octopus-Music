@@ -91,7 +91,7 @@
   .guitar4 .graciaph {
     grid-area: graciaph; }
 
-.titulosuc {
+.titulosuc, .titulo-cart {
   font-size: 2.5em;
   color: aliceblue;
   padding-bottom: 0.5em;
@@ -101,10 +101,6 @@ iframe {
   width: 48em;
   height: 33em;
   transition: height 1s, width 1s; }
-
-iframe:hover {
-  width: 53em;
-  height: 38em; }
 
 .direccion, .direccion2 {
   text-align: center;
@@ -118,9 +114,90 @@ iframe:hover {
 .tiendaph {
   width: 42em; }
 
-.suc-1 {
+.suc {
   display: flex;
   justify-content: space-around; }
+
+.guitar-name {
+  padding-top: 0.5em;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  color: aliceblue; }
+
+.cart-button {
+  margin-top: 0.5em;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.5em; }
+
+.cart-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "fonseca gracia yamaha"; }
+  .cart-list .fonseca, .cart-list .gracia, .cart-list .yamaha {
+    grid-area: fonseca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .cart-list .fonseca .fonsecacart, .cart-list .gracia .fonsecacart, .cart-list .yamaha .fonsecacart {
+      width: 22em; }
+  .cart-list .gracia {
+    grid-area: gracia; }
+    .cart-list .gracia .graciacart {
+      width: 12em; }
+  .cart-list .yamaha {
+    grid-area: yamaha; }
+    .cart-list .yamaha .yamahacart {
+      width: 22em; }
+
+.text {
+  font-size: 2em;
+  color: aliceblue;
+  margin-bottom: 0.3em; }
+
+label {
+  font-size: 1.5em;
+  color: aliceblue; }
+
+.envio-retiro {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "iconos . ."; }
+  .envio-retiro .iconos {
+    grid-area: iconos;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .envio-retiro .iconos .envio-camion {
+      display: flex;
+      flex-direction: column;
+      justify-self: left;
+      align-items: center; }
+      .envio-retiro .iconos .envio-camion img {
+        margin-left: 0.5em;
+        width: 7em; }
+    .envio-retiro .iconos .retiro-sucursal {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2em;
+      margin-right: 7em;
+      align-items: center; }
+      .envio-retiro .iconos .retiro-sucursal img {
+        width: 8em; }
+
+.action-button, .action-button2 {
+  display: flex;
+  justify-content: end;
+  justify-items: end;
+  font-size: 1.2em;
+  margin-bottom: 0.3em; }
+
+.action-button2 {
+  margin-bottom: 0; }
 
 header {
   background-image: linear-gradient(to top, #99582a, #ffe6a7);
