@@ -300,3 +300,56 @@ label {
   @extend .action-button;
   margin-bottom: 0;
 }
+
+
+// CONTACTO
+
+
+.titulo-contacto {
+  @extend .titulosuc;
+  text-decoration: none;
+}
+
+section {
+  .wsp {
+    padding-bottom: 2em;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: underline;
+  }
+}
+
+
+section {
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    font-size: 1.3em;
+
+    .form-text {
+      color: $text-color;
+      margin-right: 0.5em;
+    }
+
+    .e-mail {
+      margin-left: 0.5em;
+    }
+
+    .c-input {
+      font-size: 1em;
+    }
+
+    .send {
+      display: flex;
+      justify-content: end;
+      justify-items: end;
+
+      input {
+        font-size: 1.4em;
+        margin-top: 0.5em;
+      }
+    }
+  }
+}

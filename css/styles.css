@@ -91,7 +91,7 @@
   .guitar4 .graciaph {
     grid-area: graciaph; }
 
-.titulosuc, .titulo-cart {
+.titulosuc, .titulo-cart, .titulo-contacto {
   font-size: 2.5em;
   color: aliceblue;
   padding-bottom: 0.5em;
@@ -198,6 +198,36 @@ label {
 
 .action-button2 {
   margin-bottom: 0; }
+
+.titulo-contacto {
+  text-decoration: none; }
+
+section .wsp {
+  padding-bottom: 2em;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: underline; }
+
+section .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  font-size: 1.3em; }
+  section .form .form-text {
+    color: aliceblue;
+    margin-right: 0.5em; }
+  section .form .e-mail {
+    margin-left: 0.5em; }
+  section .form .c-input {
+    font-size: 1em; }
+  section .form .send {
+    display: flex;
+    justify-content: end;
+    justify-items: end; }
+    section .form .send input {
+      font-size: 1.4em;
+      margin-top: 0.5em; }
 
 header {
   background-image: linear-gradient(to top, #99582a, #ffe6a7);
