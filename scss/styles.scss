@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Saira:wght@200&display=swap");
 
 
-@import './variables.scss';
-@import './mixins.scss';
-@import './main.scss';
-@import './header.scss';
+@import './_variables.scss';
+@import './_mixins.scss';
+@import './_main.scss';
+@import './_header.scss';
 
 * {
   margin: 0;
