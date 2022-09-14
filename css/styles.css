@@ -508,7 +508,37 @@ section .form {
       justify-content: center; }
   .footer4 {
     grid-area: footer4;
-    width: 15em; } }
+    width: 15em; }
+  .form-responsive {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 0fr 0fr 0fr 0fr;
+    grid-template-areas: "header5 ." "header5 ." "header5 ." "footer5 footer5"; }
+    .form-responsive .header5 {
+      grid-area: header5;
+      display: flex;
+      flex-direction: column;
+      background-image: linear-gradient(to right, #99582a, #ffe6a7); }
+      .form-responsive .header5 .logo-titulo {
+        margin-right: 1.7em; }
+      .form-responsive .header5 .logo {
+        width: 0;
+        height: 0; }
+      .form-responsive .header5 .navbar2,
+      .form-responsive .header5 .navbar-text,
+      .form-responsive .header5 .navbar-select {
+        transition: none;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.7em;
+        margin-top: 0em; }
+    .form-responsive .form-content-responsive {
+      display: flex;
+      flex-direction: column; }
+      .form-responsive .form-content-responsive .form-text-responsive {
+        font-size: 1em; }
+    .form-responsive .footer5 {
+      grid-area: footer5; } }
 
 @media only screen and (max-width: 768px) {
   .titulosec {
