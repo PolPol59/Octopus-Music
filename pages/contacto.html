@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Contacto</title>
 </head>
 
 <body>
-    <section class="form-responsive">
-    <header class="header5">
+    <header>
         <section class="logo-titulo">
             <img class="logo" src="../images/logo.png" alt="logo de una corchea">
             <h1 class="titulo">Octopus Music</h1>
@@ -21,19 +20,19 @@
         <nav>
             <ul class="navbar2">
                 <a href="../index.html">
-                    <li class="navbar2 navbar-text">Inicio</li>
+                    <li class="navbar2">Inicio</li>
                 </a>
                 <a href="../pages/productos.html">
-                    <li class="navbar2 navbar-text">Productos</li>
+                    <li class="navbar2">Productos</li>
                 </a>
                 <a href="../pages/sucursales.html">
-                    <li class="navbar2 navbar-text">Sucursales</li>
+                    <li class="navbar2">Sucursales</li>
                 </a>
                 <a href="../pages/carrito.html">
-                    <li class="navbar2 navbar-text">Carrito</li>
+                    <li class="navbar2">Carrito</li>
                 </a>
                 <a href="../pages/contacto.html">
-                    <li class="navbar-select navbar-text">Contacto</li>
+                    <li class="navbar-select">Contacto</li>
                 </a>
             </ul>
         </nav>
@@ -42,33 +41,32 @@
         <h1 class="titulo-contacto">¿Buscas algo en específico?</h1>
         <h1 class="titulo-contacto">¡Escrbinos y lo conseguimos!</h1>
         <section>
-            <h2 class="wsp">Whatsapp: +54 9 11-8442-5895</h2>
+            <h2 class="wsp p-3 mb-2 bg-secondary text-white">Whatsapp: +54 9 11-8442-5895</h2>
         </section>
         <section>
             <h1 class="titulo-contacto">O envianos un correo</h1>
-            <section class="form form-responsive">
-                <form action="mailto: octopusmusic@hotmail.com" class="form-content-responsive">
+            <section class="form">
+                <form action="../index.html">
                     <div class="form">
-                        <label class="form-text form-text-responsive" for="text">Nombre:</label>
-                        <input class="c-input" type="text">
+                        <label class="form-text" for="text">Nombre:</label>
+                        <input class="c-input" type="text" id="" placeholder="Hernan">
                     </div>
                     <div class="form">
-                        <label class="e-mail form-text form-text-responsive" for="text">E-mail:</label>
-                        <input class="c-input" type="text">
+                        <label class="e-mail form-text" for="text">E-mail:</label>
+                        <input class="c-input" type="text" placeholder="hernanhernandez@hotmail.com">
                     </div>
                     <div class="form">
-                        <label class="form-text form-text-responsive" for="">Consulta:</label>
+                        <label class="form-text" for="">Consulta:</label>
                         <textarea class="c-input" rows="5" cols="26"></textarea>
-                    </div>
-                    <div class="send">
-                        <input type="submit" value="Enviar">
                     </div>
                 </form>
             </section>
+            <div class="send">
+                <button class="send">Enviar</button>
+            </div>
         </section>
-    </section>
     </main>
-    <footer class="footer5">©Todos los derechos reservados. Octopus Music S.A. 2022.</footer>
+    <footer>©Todos los derechos reservados. Octopus Music S.A. 2022.</footer>
 </body>
 
 </html>
