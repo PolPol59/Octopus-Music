@@ -380,13 +380,13 @@ section {
       "header sucursal1"
       "header sucursal2"
       "footer footer";
-  
+
     header {
       grid-area: header;
       display: flex;
       flex-direction: column;
       background-image: linear-gradient(to right, #99582a, #ffe6a7);
-    
+
       .navbar {
         display: flex;
         flex-direction: column;
@@ -402,7 +402,7 @@ section {
         font-size: 1.5em;
       }
     }
-    
+
     .bienvenido2 {
       animation: none;
       font-size: 1em;
@@ -412,20 +412,254 @@ section {
     }
 
     .sucursal1,
-  .sucursal2 {
-    display: flex;
-    flex-direction: column;
-    font-size: 2.2em;
-    margin-top: 3em;
+    .sucursal2 {
+      display: flex;
+      flex-direction: column;
+      font-size: 2.2em;
+      margin-top: 3em;
+    }
+
+    footer {
+      grid-area: footer;
+      margin-top: 0;
+      width: 13.29em;
+      font-size: 2em;
+    }
   }
 
-  footer {
-    grid-area: footer;
-    margin-top: 0;
-    width: 13.29em;
+
+
+//  PRODUCTOS 425PX
+
+
+
+.fondo-responsive {
+  background-image: url(../images/fondo-responsive.jpg);
+  background-size: cover;
+}
+
+.guitarras {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 0fr 0fr 0fr 0fr 0fr;
+  grid-template-areas:
+    "header2 guitar-responsive"
+    "header2 ."
+    "header2 ."
+    "header2 ."
+    "footer2 footer2 ";
+
+  .navbar-text {
+    transition: none;
+  }
+
+  .logo-titulo {
+    margin-right: 1.7em;
+  }
+
+  .logo {
+    width: 0;
+    height: 0;
+  }
+
+  .titulosec2-responsive {
+    color: $text-color;
+    font-size: $title-size;
+  }
+
+  .titulo2 {
+    font-size: $title-size;
+  }
+
+  .header2 {
+    grid-area: header2;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #99582a, #ffe6a7);
+
+
+    .navbar2 {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.7em;
+      margin-top: 7em;
+    }
+  }
+
+  .titulosec2-responsive {
+    display: flex;
+    justify-content: center;
+    font-size: 5em;
+  }
+
+  .guitar1 {
+    margin-top: 2em;
+    grid-area: guitar1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0fr 0fr;
+    grid-template-areas:
+      "guitar1-text"
+      "yamahaslgph"
+      "add";
+
+    .guitar1-title {
+      font-size: 3em;
+    }
+
+    .yamahaslgph {
+      display: flex;
+      justify-content: center;
+      justify-self: center;
+      width: 18em;
+      grid-area: yamahaslgph;
+      flex-direction: column-reverse;
+    }
+
+    .guitar1-text {
+      grid-area: guitar1-text;
+      list-style: circle;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 2em;
+      padding-bottom: 1em;
+    }
+  }
+
+  .guitar2 {
+    grid-area: guitar2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.4fr;
+    grid-template-areas:
+      "guitar2-text"
+      "yamahaph"
+      "add";
+
+    .yamahaph {
+      grid-area: yamahaph;
+      width: 18em;
+      display: flex;
+      justify-content: center;
+      justify-self: center;
+      flex-direction: column-reverse;
+    }
+
+    .guitar2-text {
+      grid-area: guitar2-text;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 2em;
+      padding-bottom: 1em;
+    }
+  }
+
+  .guitar3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.4fr 0fr;
+    grid-template-areas:
+      "guitar3-text"
+      "fonsecaph"
+      "add";
+
+    .guitar3-text {
+      grid-area: guitar3-text;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 2em;
+      padding-bottom: 1em;
+    }
+
+    .fonsecaph {
+      grid-area: fonsecaph;
+      width: 18em;
+      display: flex;
+      justify-content: center;
+      justify-self: center;
+      flex-direction: column-reverse;
+    }
+  }
+
+  .guitar4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.4fr 0fr;
+    grid-template-areas:
+      "guitar4-text"
+      "graciaph"
+      "add";
+
+    .guitar4-text {
+      grid-area: guitar4-text;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 2em;
+      padding-bottom: 1em;
+    }
+
+    .graciaph {
+      grid-area: graciaph;
+      width: 18em;
+      display: flex;
+      justify-self: center;
+      justify-content: center;
+      flex-direction: column-reverse;
+      margin-right: 0.5em;
+    }
+
+  }
+
+  .precio {
+    grid-area: precio;
     font-size: 2em;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    padding-top: 0;
   }
+
+  .precio4-2 {
+    font-size: 2em;
+    margin-right: 0.5em;
+    display: flex;
+    justify-content: center;
+    padding-top: 0em;
   }
+
+  .add {
+    font-size: 2em;
+    grid-area: add;
+    display: flex;
+    justify-content: center;
+    font-stretch: extra-expanded;
+    margin-right: 0.1em;
+  }
+
+  .add2-425 {
+    font-size: 1.5em;
+    grid-area: add;
+    display: flex;
+    padding-bottom: 1em;
+    justify-content: center;
+    font-stretch: extra-expanded;
+    margin-right: 2em;
+  }
+}
+
+.footer2 {
+  grid-area: footer2;
+  width: 21.2em;
+  font-size: 2.5em;
+}
+
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -450,11 +684,81 @@ section {
       "horario"
       "sucursal1"
       "sucursal2";
-  
 
-  .bienvenido {
-    animation: none;
+
+    .bienvenido {
+      animation: none;
+    }
   }
-}
+
+
+// PRODUCTOS 768PX
+
+.guitarras {
+  .precio2 {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-text {
+    transition: none;
+  }
+
+  
+  .precio4-2 {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .add2-768 {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+
 }
 
+.yamahaslgph2 {
+  display: flex;
+  flex-direction: column-reverse;
+
+
+}
+
+.yamahaph2 {
+  flex-direction: column-reverse;
+
+}
+
+.fonsecaph2 {
+  flex-direction: column-reverse;
+
+}
+
+.graciaph2 {
+  flex-direction: column-reverse;
+}
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+  // PRODUCTOS 1024PX
+
+  .yamahaslgph2, .yamahaph2, .fonsecaph2, .graciaph2 {
+    flex-direction: column-reverse;
+
+    .precio2, .precio4-2{
+      padding-top: 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .graciaph2 {
+    width: 15em;
+  }
+
+}
