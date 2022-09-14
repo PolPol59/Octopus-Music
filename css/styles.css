@@ -623,7 +623,6 @@ header {
       width: 3em;
       grid-area: logo; }
   header .navbar, header .navbar-select, header .navbar2 {
-    padding-top: 0.5em;
     display: flex;
     align-items: center;
     justify-content: space-around;
