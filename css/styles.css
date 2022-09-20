@@ -491,7 +491,8 @@ section .send {
         width: 0;
         height: 0; }
       .carrito .header4 h1 {
-        font-size: 2em; }
+        font-size: 2em;
+        text-align: center; }
       .carrito .header4 .navbar2,
       .carrito .header4 .navbar-text,
       .carrito .header4 .navbar-select {
