@@ -1,0 +1,50 @@
+header {
+    background-image: linear-gradient(to top, #99582a, #ffe6a7);
+    text-decoration: none;
+
+    .logo-titulo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "logo titulo .";
+
+        .titulo {
+            grid-area: titulo;
+        }
+
+        .logo {
+            width: 5em;
+            grid-area: logo;
+            background-color: none;
+        }
+
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 20px;
+        color: $text-color;
+    }
+
+    .navbar-select {
+        @extend .navbar;
+        font-weight: bold;
+    }
+
+    .navbar2 {
+        @extend .navbar;
+
+    }
+
+    .navbar-text {
+        font-size: 20px;
+        transition: font-size 0.2s;
+    }
+
+    .navbar-text:hover {
+        font-size: 25px;
+    }    
+
+    }
