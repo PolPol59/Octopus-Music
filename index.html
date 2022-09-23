@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="MUSICA, INSTRUMENTOS, CABALLITO, PALERMO, BAJOS, BATERIAS">
-    <meta name="description" content="Bievenido a la página de la tienda Octopus Music. Encontrá los mejores precios aquí.">
+    <meta name="description"
+        content="Bievenido a la página de la tienda Octopus Music. Encontrá los mejores precios aquí.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
@@ -17,34 +18,72 @@
     <section class="index2">
         <header>
             <section class="logo-titulo">
-                <img class="logo" src="./images/logo.png" alt="logo de un pequeño pulpo">
                 <h1 class="titulo">Octopus Music</h1>
+                <img class="logo" src="./images/logo.png" alt="logo de un pequeño pulpo">
             </section>
-            <nav>
-                <ul class="navbar">
-                    <a href="./index.html">
-                        <li class="navbar-select navbar-text">Inicio</li>
-                    </a>
-                    <a href="./pages/productos.html">
-                        <li class="navbar navbar-text">Productos</li>
-                    </a>
-                    <a href="./pages/sucursales.html">
-                        <li class="navbar navbar-text">Sucursales</li>
-                    </a>
-                    <a href="./pages/carrito.html">
-                        <li class="navbar navbar-text">Carrito</li>
-                    </a>
-                    <a href="./pages/contacto.html">
-                        <li class="navbar navbar-text">Contacto</li>
-                    </a>
-                </ul>
-                
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link navbar navbar-text navbar-select active text-white" aria-current="page"
+                                href="./index.html">Inicio</a>
+                            <!-- <a class="nav-link navbar navbar-text text-white" href="./pages/productos.html">Productos</a> -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link navbar navbar-text dropdown-toggle text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <h5 class="dropdown-header">Guitarras</h5>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./pages/productos.html">Guitarras Criollas</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Guitarras Acústicas</a></li>
+                                    <li><a class="dropdown-item" href="#">Guitarras Eléctricas</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <h5 class="dropdown-header">Bajos</h5>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Bajos Eléctricos</a></li>
+                                    <li><a class="dropdown-item" href="#">Bajos Acústicos</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <h5 class="dropdown-header">Percusión</h5>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Tambores</a></li>
+                                    <li><a class="dropdown-item" href="#">Baterias</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <h5 class="dropdown-header">Viento</h5>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Flautas</a></li>
+                                </ul>
+                            </li>
+                            <a class="nav-link navbar navbar-text text-white "
+                                href="./pages/sucursales.html">Sucursales</a>
+                            <a class="nav-link navbar navbar-text text-white " href="./pages/carrito.html">Carrito</a>
+                            <a class="nav-link navbar navbar-text text-white " href="./pages/contacto.html">Contacto</a>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </header>
         <main class="index index3">
             <section class="bienvenido bienvenido2 bienvenido3">
                 <!-- TEXTO DE BIENVENIDA-->
-                <h1 class="titulosec p-3 mb-2 bg-secondary text-white">¡Bienvenido!</h1>
+                <h1 class="titulosec">¡Bienvenido!</h1>
                 <p class="texto">Gracias por elegirnos. Nos alegra que nos hayas visitado y esperamos ser tu elección a
                     la
                     hora de elegir tus
@@ -73,7 +112,7 @@
             </section>
             <section class="sucursal1">
                 <a href="./pages/sucursales.html#palermo"></a>
-                <p class="sucursal p-3 mb-2 bg-secondary text-white">Sucursal Palermo</p>
+                <p class="sucursal ">Sucursal Palermo</p>
                 <ul>
                     <li>Lunes a viernes de 09:00 a 19:00</li>
                     <li>Sabados de 10:00 a 17:00</li>
@@ -81,7 +120,7 @@
             </section>
             <section class="sucursal2">
                 <a href="./pages/sucursales.html#caballito">
-                    <p class="sucursal p-3 mb-2 bg-secondary text-white">Sucursal Caballito</p>
+                    <p class="sucursal">Sucursal Caballito</p>
                 </a>
                 <ul>
                     <li>Lunes a viernes de 09:30 a 19:30</li>
@@ -89,10 +128,12 @@
                 </ul>
             </section>
         </main>
-        <footer >©Todos los derechos reservados. Octopus Music S.A. 2022.</footer>
+        <footer>©Todos los derechos reservados. Octopus Music S.A. 2022.</footer>
     </section>
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 
 

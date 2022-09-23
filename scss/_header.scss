@@ -1,19 +1,20 @@
 header {
-    background-image: linear-gradient(to top, #99582a, #ffe6a7);
+    background-image: $background-color;
     text-decoration: none;
+    display: flex;
+    justify-content: space-between;
 
     .logo-titulo {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "logo titulo .";
+        display: flex;
+        flex-direction: row;
 
         .titulo {
             grid-area: titulo;
         }
 
         .logo {
-            width: 5em;
+            width: 7em;
+            height: 4em;
             grid-area: logo;
             background-color: none;
         }
@@ -22,8 +23,7 @@ header {
 
     .navbar {
         display: flex;
-        align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         font-size: 20px;
         color: $text-color;
     }
@@ -35,10 +35,10 @@ header {
 
     .navbar2 {
         @extend .navbar;
-
     }
 
     .navbar-text {
+        margin-right: 2em;
         font-size: 20px;
         transition: font-size 0.2s;
     }

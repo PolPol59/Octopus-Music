@@ -256,7 +256,7 @@ section .send {
       .index2 header .navbar, .index2 header .navbar-select, .index2 header .navbar2 {
         display: flex;
         flex-direction: column;
-        margin-top: 7em;
+        margin-top: 0;
         font-size: 1.2em; }
       .index2 header .navbar-text {
         transition: none; }
@@ -665,27 +665,28 @@ section .send {
 
 header {
   background-image: linear-gradient(to top, #99582a, #ffe6a7);
-  text-decoration: none; }
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between; }
   header .logo-titulo {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "logo titulo ."; }
+    display: flex;
+    flex-direction: row; }
     header .logo-titulo .titulo {
       grid-area: titulo; }
     header .logo-titulo .logo {
-      width: 5em;
+      width: 7em;
+      height: 4em;
       grid-area: logo;
       background-color: none; }
   header .navbar, header .navbar-select, header .navbar2 {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 20px;
     color: aliceblue; }
   header .navbar-select {
     font-weight: bold; }
   header .navbar-text {
+    margin-right: 2em;
     font-size: 20px;
     transition: font-size 0.2s; }
   header .navbar-text:hover {
