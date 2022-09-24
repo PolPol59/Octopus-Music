@@ -6,7 +6,7 @@
 
 @mixin guitar-photo () {
     display: flex;
-    justify-content: right;
+    width: 15em;
 }
 
 @mixin guitar-responsive-photo () {

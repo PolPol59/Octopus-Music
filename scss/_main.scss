@@ -78,10 +78,16 @@
 }
 
 .guitar1 {
-  @include guitar-order;
+  display: grid;
+    grid-template-columns: 0.5fr;
+    grid-template-rows:0.4fr 0.2fr 0.4fr;
   grid-template-areas:
-    "guitar1-text yamahaslgph"
-    ". add";
+    "yamahaslgph ."
+    " add .";
+
+    .guitar-title {
+      font-size: 1em;
+    }
 
   .guitar-text {
     grid-area: guitar-text;
@@ -89,6 +95,8 @@
 
   .yamahaslgph {
     grid-area: yamahaslgph;
+    display: flex;
+    flex-direction: column;
   }
 }
 

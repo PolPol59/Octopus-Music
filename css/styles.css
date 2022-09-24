@@ -52,13 +52,17 @@
 
 .guitar1 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 0.4fr;
-  grid-template-areas: "guitar1-text yamahaslgph" ". add"; }
+  grid-template-columns: 0.5fr;
+  grid-template-rows: 0.4fr 0.2fr 0.4fr;
+  grid-template-areas: "yamahaslgph ." " add ."; }
+  .guitar1 .guitar-title {
+    font-size: 1em; }
   .guitar1 .guitar-text {
     grid-area: guitar-text; }
   .guitar1 .yamahaslgph {
-    grid-area: yamahaslgph; }
+    grid-area: yamahaslgph;
+    display: flex;
+    flex-direction: column; }
 
 .guitar2 {
   display: grid;
@@ -742,7 +746,6 @@ footer {
   font-size: 1.5em;
   grid-area: add;
   display: flex;
-  justify-content: right;
   font-stretch: extra-expanded;
   margin-right: 2em; }
 
@@ -752,13 +755,11 @@ footer {
 .precio, .precio4 {
   font-size: 1.3em;
   margin-right: 0.5em;
-  display: flex;
-  justify-content: right;
-  padding-top: 10.9em; }
+  display: flex; }
 
 .precio4 {
   padding-top: 18em; }
 
 .guitar-photo {
   display: flex;
-  justify-content: right; }
+  width: 15em; }
