@@ -69,7 +69,6 @@
 
 // PRODUCTOS
 
-
 .titulosec2 {
   padding-bottom: 1em;
   font-size: 2em;
@@ -77,74 +76,88 @@
   text-decoration: underline;
 }
 
+ .guitars {
+   display: grid;
+   grid-column-gap: 1em;
+   grid-row-gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 0.5fr 1fr;
+  grid-template-areas: "guitar1 guitar2 guitar3"
+                       " guitar4 . .";
+
+
+
 .guitar1 {
-  display: grid;
-    grid-template-columns: 0.5fr;
-    grid-template-rows:0.4fr 0.2fr 0.4fr;
-  grid-template-areas:
-    "yamahaslgph ."
-    " add .";
-
-    .guitar-title {
-      font-size: 1em;
-    }
-
-  .guitar-text {
-    grid-area: guitar-text;
-  }
+  grid-area: guitar1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: $borde;
+  border-color: white;
 
   .yamahaslgph {
     grid-area: yamahaslgph;
+    width: 13em;
     display: flex;
+    align-items: center;
     flex-direction: column;
   }
 }
 
 .guitar2 {
-  @include guitar-order;
-  grid-template-areas:
-    "guitar2-text yamahaph"
-    ". add";
+  grid-area: guitar2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: $borde;
+  border-color: white;
 
-  .guitar2-text {
-    grid-area: guitar2-text;
-  }
+    .guitar-title {
+      font-size: 1em;
+    }
 
   .yamahaph {
     grid-area: yamahaph;
+    display: flex;
+    flex-direction: column;
+    width: 13em;
   }
 }
 
 .guitar3 {
-  @include guitar-order;
-  grid-template-areas:
-    "guitar3-text fonsecaph"
-    ". add";
-
-  .guitar3-text {
-    grid-area: guitar3-text;
-  }
+  grid-area: guitar3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: $borde;
+  border-color: white;
 
   .fonsecaph {
     grid-area: fonsecaph;
+    width: 13em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
 .guitar4 {
-  @include guitar-order;
-  grid-template-rows: 1fr;
-  grid-template-areas:
-    "guitar4-text graciaph"
-    ". add";
-
-  .guitar4-text {
-    grid-area: guitar4-text;
-  }
+  grid-area: guitar4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: $borde;
+  border-color: white;
 
   .graciaph {
     grid-area: graciaph;
+    display: flex;
+    flex-direction: column;
+    width: 6em;
+
   }
 }
+ }
 
 
 // SUCURSALES
@@ -374,7 +387,7 @@ section {
 
 // MEDIA QUERIE INDEX
 
-@media only screen and (max-width: 425px) {
+/*@media only screen and (max-width: 425px) {
 
   .index2 {
     overflow-x: hidden;
@@ -1087,4 +1100,4 @@ section {
     }
   }
 
-}
+} */

@@ -66,29 +66,33 @@ footer {
   color: $text-color;
 }
 
+.guitar-title {
+  font-size: 1em;
+  text-align: center;
+}
+
 .add {
+  margin-bottom: 0.5em;
   font-size: 1.5em;
   grid-area: add;
   display: flex;
   font-stretch: extra-expanded;
-  margin-right: 2em;
+  justify-self: center;
 }
 
 .add2 {
   @extend .add;
-  margin-right: 0.5em;
 }
 
 .precio {
   font-size: 1.3em;
-  margin-right: 0.5em;
   display: flex;
+  align-self: center;
   
 }
 
 .precio4 {
   @extend .precio;
-  padding-top: 18em;
 }
 
 .guitar-photo {

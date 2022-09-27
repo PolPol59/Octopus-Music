@@ -50,50 +50,65 @@
   color: aliceblue;
   text-decoration: underline; }
 
-.guitar1 {
+.guitars {
   display: grid;
-  grid-template-columns: 0.5fr;
-  grid-template-rows: 0.4fr 0.2fr 0.4fr;
-  grid-template-areas: "yamahaslgph ." " add ."; }
-  .guitar1 .guitar-title {
-    font-size: 1em; }
-  .guitar1 .guitar-text {
-    grid-area: guitar-text; }
-  .guitar1 .yamahaslgph {
-    grid-area: yamahaslgph;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  grid-template-areas: "guitar1 guitar2 guitar3" " guitar4 . ."; }
+  .guitars .guitar1 {
+    grid-area: guitar1;
     display: flex;
-    flex-direction: column; }
-
-.guitar2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 0.4fr;
-  grid-template-areas: "guitar2-text yamahaph" ". add"; }
-  .guitar2 .guitar2-text {
-    grid-area: guitar2-text; }
-  .guitar2 .yamahaph {
-    grid-area: yamahaph; }
-
-.guitar3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 0.4fr;
-  grid-template-areas: "guitar3-text fonsecaph" ". add"; }
-  .guitar3 .guitar3-text {
-    grid-area: guitar3-text; }
-  .guitar3 .fonsecaph {
-    grid-area: fonsecaph; }
-
-.guitar4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 0.4fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "guitar4-text graciaph" ". add"; }
-  .guitar4 .guitar4-text {
-    grid-area: guitar4-text; }
-  .guitar4 .graciaph {
-    grid-area: graciaph; }
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid;
+    border-color: white; }
+    .guitars .guitar1 .yamahaslgph {
+      grid-area: yamahaslgph;
+      width: 13em;
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+  .guitars .guitar2 {
+    grid-area: guitar2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid;
+    border-color: white; }
+    .guitars .guitar2 .guitar-title {
+      font-size: 1em; }
+    .guitars .guitar2 .yamahaph {
+      grid-area: yamahaph;
+      display: flex;
+      flex-direction: column;
+      width: 13em; }
+  .guitars .guitar3 {
+    grid-area: guitar3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid;
+    border-color: white; }
+    .guitars .guitar3 .fonsecaph {
+      grid-area: fonsecaph;
+      width: 13em;
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+  .guitars .guitar4 {
+    grid-area: guitar4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid;
+    border-color: white; }
+    .guitars .guitar4 .graciaph {
+      grid-area: graciaph;
+      display: flex;
+      flex-direction: column;
+      width: 6em; }
 
 .titulosuc, .titulo-cart, .titulo-contacto {
   font-size: 2.5em;
@@ -237,7 +252,8 @@ section .send {
   justify-content: end;
   justify-items: end; }
 
-@media only screen and (max-width: 425px) {
+/*@media only screen and (max-width: 425px) {
+
   .index2 {
     overflow-x: hidden;
     background-image: url(../images/fondo-responsive.jpg);
@@ -245,168 +261,251 @@ section .send {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     grid-template-rows: 0.1fr 0fr 0fr 0fr;
-    grid-template-areas: "header bienvenido" "header horario" "header sucursal1" "header sucursal2" "footer footer"; }
-    .index2 header {
+    grid-template-areas:
+      "header bienvenido"
+      "header horario"
+      "header sucursal1"
+      "header sucursal2"
+      "footer footer";
+
+    header {
       grid-area: header;
       display: flex;
       flex-direction: column;
-      background-image: linear-gradient(to right, #99582a, #ffe6a7); }
-      .index2 header .logo-titulo {
+      background-image: linear-gradient(to right, #99582a, #ffe6a7);
+
+      .logo-titulo {
         display: flex;
-        flex-wrap: wrap; }
-        .index2 header .logo-titulo .logo {
+        flex-wrap: wrap;
+
+        .logo {
           width: 0;
-          height: 0; }
-      .index2 header .navbar, .index2 header .navbar-select, .index2 header .navbar2 {
+          height: 0;
+        }
+      }
+
+      .navbar {
         display: flex;
         flex-direction: column;
         margin-top: 0;
-        font-size: 1.2em; }
-      .index2 header .navbar-text {
-        transition: none; }
-      .index2 header h1 {
-        font-size: 1.5em; }
-    .index2 .bienvenido2 {
+        font-size: 1.2em;
+      }
+
+      .navbar-text {
+        transition: none;
+      }
+
+
+      h1 {
+        font-size: 1.5em;
+      }
+    }
+
+    .bienvenido2 {
       animation: none;
       font-size: 1em;
       margin-left: 0.5em;
       display: flex;
-      flex-direction: column; }
-    .index2 .sucursal1,
-    .index2 .sucursal2 {
+      flex-direction: column;
+    }
+
+    .sucursal1,
+    .sucursal2 {
       display: flex;
       flex-direction: column;
       font-size: 2.2em;
-      margin-top: 3em; }
-    .index2 footer {
+      margin-top: 3em;
+    }
+
+    footer {
       grid-area: footer;
-      width: 13.3em; }
+      width: 13.3em;
+    }
+  }
+
+
+
+  //  PRODUCTOS 425PX
+
+
+
   .fondo-responsive {
     background-image: url(../images/fondo-responsive.jpg);
-    background-size: cover; }
+    background-size: cover;
+  }
+
   .guitarras {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     grid-template-rows: 0fr 0fr 0fr 0fr 0fr;
-    grid-template-areas: "header2 ." "header2 ." "header2 ." "header2 ." "footer2 footer2 "; }
-    .guitarras .navbar-text {
-      transition: none; }
-    .guitarras .logo-titulo {
+    grid-template-areas:
+      "header2 ."
+      "header2 ."
+      "header2 ."
+      "header2 ."
+      "footer2 footer2 ";
+
+    .navbar-text {
+      transition: none;
+    }
+
+    .logo-titulo {
       margin-right: 1.7em;
       display: flex;
-      flex-wrap: wrap; }
-    .guitarras .logo {
+      flex-wrap: wrap;
+    }
+
+    .logo {
       width: 0;
-      height: 0; }
-    .guitarras .titulosec2-responsive {
-      color: aliceblue;
-      font-size: 3em; }
-    .guitarras .titulo2 {
-      font-size: 3em; }
-    .guitarras .header2 {
+      height: 0;
+    }
+
+    .titulosec2-responsive {
+      color: $text-color;
+      font-size: $title-size;
+    }
+
+    .titulo2 {
+      font-size: $title-size;
+    }
+
+    .header2 {
       grid-area: header2;
       display: flex;
       flex-direction: column;
-      background-image: linear-gradient(to right, #99582a, #ffe6a7); }
-      .guitarras .header2 .logo-titulo {
+      background-image: linear-gradient(to right, #99582a, #ffe6a7);
+
+      .logo-titulo {
         margin-right: 0;
         display: flex;
-        flex-wrap: wrap; }
-        .guitarras .header2 .logo-titulo .logo {
+        flex-wrap: wrap;
+
+        .logo {
           width: 0;
-          height: 0; }
-      .guitarras .header2 .navbar2 {
+          height: 0;
+        }
+      }
+
+      .navbar2 {
         display: flex;
         flex-direction: column;
         font-size: 1.7em;
-        margin-top: 7em; }
-    .guitarras .titulosec2-responsive {
+        margin-top: 7em;
+      }
+    }
+
+    .titulosec2-responsive {
       display: flex;
       justify-content: center;
-      font-size: 5em; }
-    .guitarras .guitar1 {
+      font-size: 5em;
+    }
+
+    .guitar1 {
       margin-top: 2em;
       grid-area: guitar1;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 0fr 0fr;
-      grid-template-areas: "guitar1-text" "yamahaslgph" "add"; }
-      .guitarras .guitar1 .guitar1-title {
-        font-size: 3em; }
-      .guitarras .guitar1 .yamahaslgph {
+      grid-template-areas:
+        "guitar1-text"
+        "yamahaslgph"
+        "add";
+
+      .guitar1-title {
+        font-size: 3em;
+      }
+
+      .yamahaslgph {
         grid-area: yamahaslgph;
-        width: 18em;
-        display: flex;
-        justify-content: center;
-        justify-self: center;
-        flex-direction: column-reverse; }
-      .guitarras .guitar1 .guitar1-text {
+        @include guitar-responsive-photo;
+      }
+
+      .guitar1-text {
         grid-area: guitar1-text;
         list-style: circle;
         display: flex;
         justify-content: center;
         flex-direction: column;
         font-size: 2em;
-        padding-bottom: 1em; }
-    .guitarras .guitar2 {
+        padding-bottom: 1em;
+      }
+    }
+
+    .guitar2 {
       grid-area: guitar2;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 0.4fr;
-      grid-template-areas: "guitar2-text" "yamahaph" "add"; }
-      .guitarras .guitar2 .yamahaph {
+      grid-template-areas:
+        "guitar2-text"
+        "yamahaph"
+        "add";
+
+      .yamahaph {
         grid-area: yamahaph;
-        width: 18em;
-        display: flex;
-        justify-content: center;
-        justify-self: center;
-        flex-direction: column-reverse; }
-      .guitarras .guitar2 .guitar2-text {
+        @include guitar-responsive-photo;
+      }
+
+      .guitar2-text {
         grid-area: guitar2-text;
         display: flex;
         justify-content: center;
         flex-direction: column;
         font-size: 2em;
-        padding-bottom: 1em; }
-    .guitarras .guitar3 {
+        padding-bottom: 1em;
+      }
+    }
+
+    .guitar3 {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 0.4fr 0fr;
-      grid-template-areas: "guitar3-text" "fonsecaph" "add"; }
-      .guitarras .guitar3 .guitar3-text {
+      grid-template-areas:
+        "guitar3-text"
+        "fonsecaph"
+        "add";
+
+      .guitar3-text {
         grid-area: guitar3-text;
         display: flex;
         justify-content: center;
         flex-direction: column;
         font-size: 2em;
-        padding-bottom: 1em; }
-      .guitarras .guitar3 .fonsecaph {
+        padding-bottom: 1em;
+      }
+
+      .fonsecaph {
         grid-area: fonsecaph;
-        width: 18em;
-        display: flex;
-        justify-content: center;
-        justify-self: center;
-        flex-direction: column-reverse; }
-    .guitarras .guitar4 {
+        @include guitar-responsive-photo;
+      }
+    }
+
+    .guitar4 {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 0.4fr 0fr;
-      grid-template-areas: "guitar4-text" "graciaph" "add"; }
-      .guitarras .guitar4 .guitar4-text {
+      grid-template-areas:
+        "guitar4-text"
+        "graciaph"
+        "add";
+
+      .guitar4-text {
         grid-area: guitar4-text;
         display: flex;
         justify-content: center;
         flex-direction: column;
         font-size: 2em;
-        padding-bottom: 1em; }
-      .guitarras .guitar4 .graciaph {
+        padding-bottom: 1em;
+      }
+
+      .graciaph {
         grid-area: graciaph;
-        width: 18em;
-        display: flex;
-        justify-content: center;
-        justify-self: center;
-        flex-direction: column-reverse; }
-    .guitarras .precio, .guitarras .precio4 {
+        @include guitar-responsive-photo
+      }
+
+    }
+
+    .precio {
       grid-area: precio;
       font-size: 2em;
       margin-right: 0;
@@ -414,259 +513,459 @@ section .send {
       justify-content: center;
       align-self: center;
       flex-direction: column;
-      padding-top: 0; }
-    .guitarras .precio4-2 {
+      padding-top: 0;
+    }
+
+    .precio4-2 {
       font-size: 2em;
       margin-right: 0.5em;
       display: flex;
       justify-content: center;
-      padding-top: 0em; }
-    .guitarras .add, .guitarras .add2 {
+      padding-top: 0em;
+    }
+
+    .add {
       font-size: 2em;
       grid-area: add;
       display: flex;
       justify-content: center;
       font-stretch: extra-expanded;
-      margin-right: 0.1em; }
-    .guitarras .add2-425 {
+      margin-right: 0.1em;
+    }
+
+    .add2-425 {
       font-size: 1.5em;
       grid-area: add;
       display: flex;
       padding-bottom: 1em;
       justify-content: center;
       font-stretch: extra-expanded;
-      margin-right: 2em; }
+      margin-right: 2em;
+    }
+  }
+
   .footer2 {
     grid-area: footer2;
-    font-size: 2.5em; }
+    font-size: 2.5em;
+  }
+
+
+  // SUCURSALES 425PX
   .sucursales {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "header3 ." "header3 ." "header3 ." "header3 ." "footer3 footer3 "; }
-    .sucursales .header3 {
+    grid-template-areas:
+      "header3 ."
+      "header3 ."
+      "header3 ."
+      "header3 ."
+      "footer3 footer3 ";
+
+
+    .header3 {
       grid-area: header3;
       display: flex;
       flex-direction: column;
-      background-image: linear-gradient(to right, #99582a, #ffe6a7); }
-      .sucursales .header3 .logo-titulo {
+      background-image: linear-gradient(to right, #99582a, #ffe6a7);
+
+      .logo-titulo {
         display: flex;
-        flex-wrap: wrap; }
-        .sucursales .header3 .logo-titulo .logo {
+        flex-wrap: wrap;
+
+
+        .logo {
           width: 0;
-          height: 0; }
-      .sucursales .header3 .navbar2,
-      .sucursales .header3 .navbar-text,
-      .sucursales .header3 .navbar-select {
+          height: 0;
+        }
+      }
+
+      .navbar2,
+      .navbar-text,
+      .navbar-select {
         transition: none;
         flex-direction: column;
         font-size: 1.7em;
-        margin-top: 7em; }
-    .sucursales .sucursal-responsive {
+        margin-top: 7em;
+      }
+
+    }
+
+    .sucursal-responsive {
       display: flex;
-      flex-direction: column; }
-      .sucursales .sucursal-responsive img {
-        width: 47.6em; }
-      .sucursales .sucursal-responsive iframe {
+      flex-direction: column;
+
+      img {
+        width: 47.6em;
+      }
+
+
+      iframe {
         transition: none;
-        width: 47.6em; }
-    .sucursales .titulosuc, .sucursales .titulo-cart, .sucursales .titulo-contacto {
-      font-size: 3em; }
-    .sucursales .direccion, .sucursales .direccion2 {
-      font-size: 3em; }
+        width: 47.6em;
+      }
+    }
+
+    .titulosuc {
+      font-size: $title-size;
+    }
+
+    .direccion {
+      font-size: $title-size;
+    }
+  }
+
   .footer3-responsive {
     grid-area: footer3;
     width: 24.7em;
-    font-size: 2.5em; }
+    font-size: 2.5em;
+  }
+
+
+  // CARRITO 425PX
+
   .carrito {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "header4 fonseca" "header4 gracia" "header4 yamaha" "header4 iconos"; }
-    .carrito .header4 {
+    grid-template-areas:
+      "header4 fonseca"
+      "header4 gracia"
+      "header4 yamaha"
+      "header4 iconos";
+
+
+    .header4 {
       grid-area: header4;
       display: flex;
       flex-direction: column;
-      background-image: linear-gradient(to right, #99582a, #ffe6a7); }
-      .carrito .header4 .logo-titulo {
+      background-image: linear-gradient(to right, #99582a, #ffe6a7);
+
+      .logo-titulo {
         display: flex;
-        flex-wrap: wrap; }
-      .carrito .header4 .logo {
+        flex-wrap: wrap;
+      }
+
+      .logo {
         width: 0;
-        height: 0; }
-      .carrito .header4 h1 {
+        height: 0;
+      }
+
+      h1 {
         font-size: 2em;
-        text-align: center; }
-      .carrito .header4 .navbar2,
-      .carrito .header4 .navbar-text,
-      .carrito .header4 .navbar-select {
+        text-align: center;
+      }
+
+      .navbar2,
+      .navbar-text,
+      .navbar-select {
         transition: none;
         display: flex;
         flex-direction: column;
         font-size: 1.5em;
-        margin-top: 6em; }
-    .carrito .cart-list-responsive {
+        margin-top: 6em;
+      }
+    }
+
+    .cart-list-responsive {
       display: flex;
-      flex-direction: column; }
-      .carrito .cart-list-responsive .guitar-name-responsive {
-        font-size: 2.5em; }
-      .carrito .cart-list-responsive .cart-button-responsive {
+      flex-direction: column;
+
+      .guitar-name-responsive {
+        font-size: 2.5em;
+      }
+
+      .cart-button-responsive {
         font-size: 3em;
         margin-top: 0.5em;
-        margin-bottom: 0.5em; }
-    .carrito .envio-retiro-responsive {
+        margin-bottom: 0.5em;
+      }
+    }
+
+    .envio-retiro-responsive {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      align-items: center; }
-      .carrito .envio-retiro-responsive .retiro-sucursal-responsive-425 {
+      align-items: center;
+
+      .retiro-sucursal-responsive-425 {
         margin-right: 0;
-        margin-left: 0; }
-      .carrito .envio-retiro-responsive .text-responsive {
-        font-size: 2em; }
-      .carrito .envio-retiro-responsive .sucursal-name-responsive {
-        font-size: 3em; }
-    .carrito .action-button-responsive {
+        margin-left: 0;
+      }
+
+      .text-responsive {
+        font-size: 2em;
+      }
+
+      .sucursal-name-responsive {
+        font-size: 3em;
+      }
+    }
+
+    .action-button-responsive {
       font-size: 2em;
-      justify-content: center; }
+      justify-content: center;
+    }
+
+  }
+
   .footer4 {
     grid-area: footer4;
-    width: 18.6em; }
+    width: 18.6em;
+  }
+
+  // CONTACTO 425PX
+
   .contacto-responsive {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     grid-template-rows: 1fr 0fr 0fr 0fr;
-    grid-template-areas: "header5 ." "header5 ." "header5 ." "footer5 footer5"; }
-    .contacto-responsive .header5 {
+    grid-template-areas:
+      "header5 ."
+      "header5 ."
+      "header5 ."
+      "footer5 footer5";
+
+    .header5 {
       grid-area: header5;
       display: flex;
       flex-direction: column;
-      background-image: linear-gradient(to right, #99582a, #ffe6a7); }
-      .contacto-responsive .header5 .logo-titulo {
+      background-image: linear-gradient(to right, #99582a, #ffe6a7);
+
+      .logo-titulo {
         display: flex;
-        flex-wrap: wrap; }
-      .contacto-responsive .header5 .logo {
+        flex-wrap: wrap;
+      }
+
+      .logo {
         width: 0;
-        height: 0; }
-      .contacto-responsive .header5 .navbar2,
-      .contacto-responsive .header5 .navbar-text,
-      .contacto-responsive .header5 .navbar-select {
+        height: 0;
+      }
+
+      .navbar2,
+      .navbar-text,
+      .navbar-select {
         transition: none;
         display: flex;
         flex-direction: column;
         font-size: 1.7em;
-        margin-top: 5em; }
-    .contacto-responsive .form-responsive {
+        margin-top: 5em;
+      }
+    }
+
+    .form-responsive {
       margin-top: 3em;
       display: flex;
-      flex-direction: column; }
-      .contacto-responsive .form-responsive .form-text-responsive {
-        font-size: 1.5em; }
-    .contacto-responsive .send-responsive {
+      flex-direction: column;
+
+      .form-text-responsive {
+        font-size: 1.5em;
+      }
+    }
+
+    .send-responsive {
       margin-top: 1em;
-      font-size: 2.5em;
+      font-size: $title-size-2;
       display: flex;
-      justify-content: center; }
-    .contacto-responsive .footer5 {
+      justify-content: center;
+    }
+
+    .footer5 {
       grid-area: footer5;
-      width: 21em; } }
+      width: 21em;
+    }
+  }
+
+}
+
 
 @media only screen and (max-width: 768px) {
   .titulosec {
-    font-size: 3em; }
-  .navbar, header .navbar-select, header .navbar2 {
-    font-size: 1em; }
+    font-size: 3em;
+  }
+
+  .navbar {
+    font-size: 1em;
+  }
+
   .navbar-text {
-    transition: none; }
+    transition: none;
+  }
+
   .index3 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.3fr 320px 0fr;
-    grid-template-areas: "bienvenido" "horario" "sucursal1" "sucursal2"; }
-    .index3 .bienvenido {
-      animation: none; }
-  .guitarras .guitar-photo {
-    justify-content: initial; }
-  .guitarras .precio2 {
-    padding-top: 0;
-    display: flex;
-    justify-content: center; }
-  .guitarras .navbar-text {
-    transition: none; }
-  .guitarras .precio4-2 {
-    padding-top: 0;
-    display: flex;
-    justify-content: center; }
-  .guitarras .add2-768 {
-    display: flex;
-    justify-self: center;
-    align-self: center; }
+    grid-template-areas:
+      "bienvenido"
+      "horario"
+      "sucursal1"
+      "sucursal2";
+
+
+    .bienvenido {
+      animation: none;
+    }
+
+  }
+
+
+  // PRODUCTOS 768PX
+
+  .guitarras {
+    .guitar-photo {
+      justify-content: initial;
+    }
+
+    .precio2 {
+      padding-top: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar-text {
+      transition: none;
+    }
+
+    .precio4-2 {
+      padding-top: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .add2-768 {
+      display: flex;
+      justify-self: center;
+      align-self: center;
+    }
+  }
+
   .yamahaslgph2 {
     display: flex;
-    flex-direction: column-reverse; }
+    flex-direction: column-reverse;
+  }
+
   .yamahaph2 {
-    flex-direction: column-reverse; }
+    flex-direction: column-reverse;
+
+  }
+
   .fonsecaph2 {
-    flex-direction: column-reverse; }
+    flex-direction: column-reverse;
+
+  }
+
   .graciaph2 {
-    flex-direction: column-reverse; }
+    flex-direction: column-reverse;
+  }
+
+
+  // SUCURSALES 768PX
+
   .sucursal-responsive-768 {
     display: flex;
-    flex-direction: column; }
-    .sucursal-responsive-768 .img-responsive-768 {
-      width: 48em; }
+    flex-direction: column;
+
+    .img-responsive-768 {
+      width: 48em;
+    }
+  }
+
+
   .navbar-text,
-  .navbar .navbar-text,
-  header .navbar-select .navbar-text,
-  header .navbar2 .navbar-text {
-    transition: none; }
+  .navbar .navbar-text {
+    transition: none;
+  }
+
+
+
+  // CARRITO 768PX 
+
+
   .cart-list-responsive-768 {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+  }
+
   .envio-retiro-responsive-768 {
     display: flex;
-    justify-content: space-around; }
-    .envio-retiro-responsive-768 .retiro-sucursal-responsive-768 {
+    justify-content: space-around;
+
+    .retiro-sucursal-responsive-768 {
       margin-right: 0;
-      margin-left: 5em; }
-  .contacto-responsive .form {
-    display: flex;
-    flex-direction: column; }
-  .contacto-responsive .send-responsive {
-    font-size: 1.5em;
-    display: flex;
-    justify-content: center; } }
+      margin-left: 5em;
+    }
+  }
+
+
+
+  // CONTACTO 768PX
+
+
+
+  .contacto-responsive {
+    .form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .send-responsive {
+      font-size: 1.5em;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+
 
 @media only screen and (max-width: 1024px) {
+
+  // PRODUCTOS 1024PX
+
   .yamahaslgph2,
   .yamahaph2,
   .fonsecaph2,
   .graciaph2 {
-    flex-direction: column-reverse; }
-    .yamahaslgph2 .precio2,
-    .yamahaslgph2 .precio4-2,
-    .yamahaph2 .precio2,
-    .yamahaph2 .precio4-2,
-    .fonsecaph2 .precio2,
-    .fonsecaph2 .precio4-2,
-    .graciaph2 .precio2,
-    .graciaph2 .precio4-2 {
+    flex-direction: column-reverse;
+
+    .precio2,
+    .precio4-2 {
       padding-top: 0;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+    }
+
+  }
+
   .add2-1024 {
-    justify-self: center; }
+    justify-self: center;
+  }
+
   .graciaph2 {
-    width: 15em; }
+    width: 15em;
+  }
+
+  // SUCURSALES 1024PX
+
   .img-responsive-1024 {
     width: 540px;
-    height: 528px; }
+    height: 528px;
+  }
+
+
+  // CARRITO 1024PX
+
   .envio-retiro-responsive-1024 {
     display: flex;
-    justify-content: center; }
-    .envio-retiro-responsive-1024 .retiro-sucursal-responsive-1024 {
-      margin-left: 5em; } }
+    justify-content: center;
 
+    .retiro-sucursal-responsive-1024 {
+      margin-left: 5em;
+    }
+  }
+
+} */
 header {
   background-image: linear-gradient(to top, #99582a, #ffe6a7);
   text-decoration: none;
@@ -742,24 +1041,22 @@ footer {
   font-size: 2em;
   color: aliceblue; }
 
+.guitar-title {
+  font-size: 1em;
+  text-align: center; }
+
 .add, .add2 {
+  margin-bottom: 0.5em;
   font-size: 1.5em;
   grid-area: add;
   display: flex;
   font-stretch: extra-expanded;
-  margin-right: 2em; }
-
-.add2 {
-  margin-right: 0.5em; }
+  justify-self: center; }
 
 .precio, .precio4 {
   font-size: 1.3em;
-  margin-right: 0.5em;
-  display: flex; }
-
-.precio4 {
-  padding-top: 18em; }
+  display: flex;
+  align-self: center; }
 
 .guitar-photo {
-  display: flex;
-  width: 15em; }
+  display: flex; }
