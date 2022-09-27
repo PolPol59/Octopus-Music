@@ -1,12 +1,16 @@
 @mixin guitar-order () {
-    display: grid;
-    grid-template-columns: 0.2fr;
-    grid-template-rows:0.4fr 0.2fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: $borde;
+    border-color: white;
+    cursor: pointer;
 }
 
-@mixin guitar-photo () {
+@mixin guitarph-order () {
     display: flex;
-    
+    flex-direction: column;
+    align-items: center;
 }
 
 @mixin guitar-responsive-photo () {

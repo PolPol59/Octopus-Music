@@ -56,16 +56,16 @@
   grid-row-gap: 1em;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1fr;
-  grid-template-areas: "guitar1 guitar2 guitar3" " guitar4 . ."; }
+  grid-template-areas: "guitar1 guitar2 guitar3" " guitar4 guitar5 guitar6"; }
   .guitars .guitar1 {
     grid-area: guitar1;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 4px solid;
-    border-color: white; }
+    border-color: white;
+    cursor: pointer; }
     .guitars .guitar1 .yamahaslgph {
-      grid-area: yamahaslgph;
       width: 13em;
       display: flex;
       align-items: center;
@@ -76,23 +76,21 @@
     flex-direction: column;
     align-items: center;
     border: 4px solid;
-    border-color: white; }
-    .guitars .guitar2 .guitar-title {
-      font-size: 1em; }
+    border-color: white;
+    cursor: pointer; }
     .guitars .guitar2 .yamahaph {
-      grid-area: yamahaph;
+      width: 13em;
       display: flex;
-      flex-direction: column;
-      width: 13em; }
+      flex-direction: column; }
   .guitars .guitar3 {
     grid-area: guitar3;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 4px solid;
-    border-color: white; }
+    border-color: white;
+    cursor: pointer; }
     .guitars .guitar3 .fonsecaph {
-      grid-area: fonsecaph;
       width: 13em;
       display: flex;
       align-items: center;
@@ -103,12 +101,38 @@
     flex-direction: column;
     align-items: center;
     border: 4px solid;
-    border-color: white; }
+    border-color: white;
+    cursor: pointer; }
     .guitars .guitar4 .graciaph {
-      grid-area: graciaph;
+      width: 6em;
+      display: flex;
+      flex-direction: column; }
+  .guitars .guitar5 {
+    grid-area: guitar5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid;
+    border-color: white;
+    cursor: pointer; }
+    .guitars .guitar5 .parquerph {
       display: flex;
       flex-direction: column;
-      width: 6em; }
+      align-items: center;
+      width: 7em; }
+  .guitars .guitar6 {
+    grid-area: guitar6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid;
+    border-color: white;
+    cursor: pointer; }
+    .guitars .guitar6 .disbyteph {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 13em; }
 
 .titulosuc, .titulo-cart, .titulo-contacto {
   font-size: 2.5em;
@@ -1057,6 +1081,3 @@ footer {
   font-size: 1.3em;
   display: flex;
   align-self: center; }
-
-.guitar-photo {
-  display: flex; }

@@ -83,20 +83,14 @@
   grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: 0.5fr 1fr;
   grid-template-areas: "guitar1 guitar2 guitar3"
-                       " guitar4 . .";
+                       " guitar4 guitar5 guitar6";
 
 
 
 .guitar1 {
   grid-area: guitar1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: $borde;
-  border-color: white;
-
+  @include guitar-order;
   .yamahaslgph {
-    grid-area: yamahaslgph;
     width: 13em;
     display: flex;
     align-items: center;
@@ -106,34 +100,20 @@
 
 .guitar2 {
   grid-area: guitar2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: $borde;
-  border-color: white;
-
-    .guitar-title {
-      font-size: 1em;
-    }
+  @include guitar-order;
 
   .yamahaph {
-    grid-area: yamahaph;
+    width: 13em;
     display: flex;
     flex-direction: column;
-    width: 13em;
   }
 }
 
 .guitar3 {
   grid-area: guitar3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: $borde;
-  border-color: white;
+  @include guitar-order;
 
   .fonsecaph {
-    grid-area: fonsecaph;
     width: 13em;
     display: flex;
     align-items: center;
@@ -143,18 +123,32 @@
 
 .guitar4 {
   grid-area: guitar4;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: $borde;
-  border-color: white;
+  @include guitar-order;
 
   .graciaph {
-    grid-area: graciaph;
-    display: flex;
-    flex-direction: column;
     width: 6em;
+    display: flex;
+        flex-direction: column;
+  }
+}
 
+.guitar5 {
+  grid-area: guitar5;
+  @include guitar-order;
+
+  .parquerph {
+    @include guitarph-order;
+    width: 7em;    
+  }
+}
+
+.guitar6 {
+  grid-area: guitar6;
+  @include guitar-order;
+
+  .disbyteph {
+    @include guitarph-order;
+   width: 13em; 
   }
 }
  }
