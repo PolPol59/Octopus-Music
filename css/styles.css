@@ -68,8 +68,10 @@
     .guitars .guitar1 .yamahaslgph {
       width: 13em;
       display: flex;
-      align-items: center;
-      flex-direction: column; }
+      flex-direction: column;
+      transition: width 0.7s, height 0.7s; }
+  .guitars .yamahaslgph:hover {
+    width: 16em; }
   .guitars .guitar2 {
     grid-area: guitar2;
     display: flex;
@@ -79,9 +81,12 @@
     border-color: white;
     cursor: pointer; }
     .guitars .guitar2 .yamahaph {
-      width: 13em;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      width: 13em;
+      transition: width 0.7s, height 0.7s; }
+  .guitars .yamahaph:hover {
+    width: 17em; }
   .guitars .guitar3 {
     grid-area: guitar3;
     display: flex;
@@ -91,10 +96,12 @@
     border-color: white;
     cursor: pointer; }
     .guitars .guitar3 .fonsecaph {
-      width: 13em;
       display: flex;
-      align-items: center;
-      flex-direction: column; }
+      flex-direction: column;
+      width: 13em;
+      transition: width 0.7s, height 0.7s; }
+  .guitars .fonsecaph:hover {
+    width: 17em; }
   .guitars .guitar4 {
     grid-area: guitar4;
     display: flex;
@@ -104,9 +111,12 @@
     border-color: white;
     cursor: pointer; }
     .guitars .guitar4 .graciaph {
-      width: 6em;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      width: 6em;
+      transition: width 0.7s, height 0.7s; }
+  .guitars .graciaph:hover {
+    width: 7.5em; }
   .guitars .guitar5 {
     grid-area: guitar5;
     display: flex;
@@ -118,8 +128,10 @@
     .guitars .guitar5 .parquerph {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      width: 7em; }
+      width: 7em;
+      transition: width 0.7s, height 0.7s; }
+  .guitars .parquerph:hover {
+    width: 9em; }
   .guitars .guitar6 {
     grid-area: guitar6;
     display: flex;
@@ -131,8 +143,10 @@
     .guitars .guitar6 .disbyteph {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      width: 13em; }
+      width: 7em;
+      transition: width 0.7s, height 0.7s; }
+  .guitars .disbyteph:hover {
+    width: 8.5em; }
 
 .titulosuc, .titulo-cart, .titulo-contacto {
   font-size: 2.5em;
@@ -1061,7 +1075,6 @@ footer {
   grid-area: footer; }
 
 .criolla {
-  padding-top: 1em;
   font-size: 2em;
   color: aliceblue; }
 
@@ -1080,4 +1093,4 @@ footer {
 .precio, .precio4 {
   font-size: 1.3em;
   display: flex;
-  align-self: center; }
+  justify-content: center; }

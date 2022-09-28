@@ -61,7 +61,6 @@ footer {
 // PRODUCTOS
 
 .criolla {
-  padding-top: 1em;
   font-size: 2em;
   color: $text-color;
 }
@@ -87,7 +86,7 @@ footer {
 .precio {
   font-size: 1.3em;
   display: flex;
-  align-self: center;
+  justify-content: center;
   
 }
 

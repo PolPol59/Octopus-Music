@@ -10,7 +10,6 @@
 @mixin guitarph-order () {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 @mixin guitar-responsive-photo () {

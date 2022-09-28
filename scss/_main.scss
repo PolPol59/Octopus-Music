@@ -90,23 +90,32 @@
 .guitar1 {
   grid-area: guitar1;
   @include guitar-order;
+
   .yamahaslgph {
     width: 13em;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @include guitarph-order;
+    transition: width 0.7s, height 0.7s;
   }
+}
+
+.yamahaslgph:hover{
+  width: 16em;
 }
 
 .guitar2 {
   grid-area: guitar2;
   @include guitar-order;
 
+  
   .yamahaph {
+    @include guitarph-order;
     width: 13em;
-    display: flex;
-    flex-direction: column;
+    transition: width 0.7s, height 0.7s;
   }
+}
+
+.yamahaph:hover {
+  width: 17em;
 }
 
 .guitar3 {
@@ -114,11 +123,14 @@
   @include guitar-order;
 
   .fonsecaph {
+    @include guitarph-order;
     width: 13em;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    transition: width 0.7s, height 0.7s;
   }
+}
+
+.fonsecaph:hover {
+  width: 17em;
 }
 
 .guitar4 {
@@ -126,10 +138,14 @@
   @include guitar-order;
 
   .graciaph {
+    @include guitarph-order;
     width: 6em;
-    display: flex;
-        flex-direction: column;
+    transition: width 0.7s, height 0.7s;
   }
+}
+
+.graciaph:hover {
+  width: 7.5em;
 }
 
 .guitar5 {
@@ -139,7 +155,12 @@
   .parquerph {
     @include guitarph-order;
     width: 7em;    
+    transition: width 0.7s, height 0.7s;
   }
+}
+
+.parquerph:hover {
+  width: 9em;
 }
 
 .guitar6 {
@@ -148,8 +169,13 @@
 
   .disbyteph {
     @include guitarph-order;
-   width: 13em; 
+   width: 7em; 
+   transition: width 0.7s, height 0.7s;
   }
+}
+
+.disbyteph:hover{
+  width: 8.5em;
 }
  }
 
