@@ -407,42 +407,47 @@ section {
 
 // MEDIA QUERIE INDEX
 
-/*@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 425px) {
 
-  .index2 {
-    overflow-x: hidden;
+  .index2, .index {
     background-image: url(../images/fondo-responsive.jpg);
     background-size: cover;
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 0.1fr 0fr 0fr 0fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr;
     grid-template-areas:
-      "header bienvenido"
-      "header horario"
-      "header sucursal1"
-      "header sucursal2"
-      "footer footer";
+      "header"
+      "bienvenido"
+      "horario"
+      "sucursal1"
+      "sucursal2"
+      "footer"
+   ;
+      
 
     header {
       grid-area: header;
+      background-image: linear-gradient(to top, #99582a, #ffe6a7);
       display: flex;
-      flex-direction: column;
-      background-image: linear-gradient(to right, #99582a, #ffe6a7);
+      flex-direction: row-reverse;
 
+    
       .logo-titulo {
-        display: flex;
-        flex-wrap: wrap;
+        grid-area: logo-titulo;
+        
+        .titulo{
+          display: flex;
+          justify-content: left;
+        }
 
         .logo {
-          width: 0;
-          height: 0;
+          display: flex;
+          align-items: right;
         }
       }
 
-      .navbar {
-        display: flex;
-        flex-direction: column;
-        margin-top: 0;
+      nav {
+        grid-area: navbar;
         font-size: 1.2em;
       }
 
@@ -450,38 +455,32 @@ section {
         transition: none;
       }
 
-
       h1 {
-        font-size: 1.5em;
+        font-size: 2em;
       }
     }
 
-    .bienvenido2 {
-      animation: none;
-      font-size: 1em;
-      margin-left: 0.5em;
-      display: flex;
-      flex-direction: column;
-    }
+     .bienvenido2 {
+       animation: none;
+       font-size: 1em;
+       display: flex;
+       flex-direction: column;
+     }
 
-    .sucursal1,
-    .sucursal2 {
-      display: flex;
-      flex-direction: column;
-      font-size: 2.2em;
-      margin-top: 3em;
-    }
+      .sucursal1,
+      .sucursal2 {
+        margin-top: 1em;
+      }
 
     footer {
       grid-area: footer;
-      width: 13.3em;
     }
-  }
+ }
+
 
 
 
   //  PRODUCTOS 425PX
-
 
 
   .fondo-responsive {
@@ -492,27 +491,33 @@ section {
   .guitarras {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 0fr 0fr 0fr 0fr 0fr;
+    grid-template-rows: 0.1fr;
     grid-template-areas:
-      "header2 ."
-      "header2 ."
-      "header2 ."
-      "header2 ."
-      "footer2 footer2 ";
+      "header"
+      "guitar1"
+      "guitar2"
+      "guitar3"
+      "guitar4"
+      "guitar5"
+      "guitar6"
+      ;
 
     .navbar-text {
       transition: none;
     }
 
     .logo-titulo {
-      margin-right: 1.7em;
-      display: flex;
-      flex-wrap: wrap;
-    }
+      grid-area: logo-titulo;
+      
+      .titulo{
+        display: flex;
+        justify-content: left;
+      }
 
-    .logo {
-      width: 0;
-      height: 0;
+      .logo {
+        display: flex;
+        align-items: right;
+      }
     }
 
     .titulosec2-responsive {
@@ -562,8 +567,8 @@ section {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 0fr 0fr;
       grid-template-areas:
-        "guitar1-text"
-        "yamahaslgph"
+      "yamahaslgph"
+      "guitar1-text"
         "add";
 
       .guitar1-title {
@@ -592,8 +597,8 @@ section {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 0.4fr;
       grid-template-areas:
+      "yamahaph"
         "guitar2-text"
-        "yamahaph"
         "add";
 
       .yamahaph {
@@ -612,12 +617,13 @@ section {
     }
 
     .guitar3 {
+      grid-area: guitar3;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 0.4fr 0fr;
       grid-template-areas:
+      "fonsecaph"
         "guitar3-text"
-        "fonsecaph"
         "add";
 
       .guitar3-text {
@@ -636,12 +642,13 @@ section {
     }
 
     .guitar4 {
+      grid-area: guitar4;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 0.4fr 0fr;
       grid-template-areas:
+      "graciaph"
         "guitar4-text"
-        "graciaph"
         "add";
 
       .guitar4-text {
@@ -658,6 +665,22 @@ section {
         @include guitar-responsive-photo
       }
 
+    }
+
+    .guitar5 {
+      grid-area: guitar5;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 0.4fr 0fr;
+      grid-template-areas:
+      "parquerph"
+        "guitar-text"
+        "add";
+
+        .parquerph {
+          grid-area: parquerph;
+          @include guitar-responsive-photo;
+        }
     }
 
     .precio {
@@ -704,7 +727,9 @@ section {
     font-size: 2.5em;
   }
 
+}
 
+/*
   // SUCURSALES 425PX
   .sucursales {
     display: grid;
