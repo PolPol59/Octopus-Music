@@ -61,8 +61,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 4px solid;
-    border-color: white;
+    border: 4px solid white;
     cursor: pointer; }
     .guitars .guitar1 .yamahaslgph {
       width: 13em;
@@ -76,8 +75,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 4px solid;
-    border-color: white;
+    border: 4px solid white;
     cursor: pointer; }
     .guitars .guitar2 .yamahaph {
       display: flex;
@@ -91,8 +89,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 4px solid;
-    border-color: white;
+    border: 4px solid white;
     cursor: pointer; }
     .guitars .guitar3 .fonsecaph {
       display: flex;
@@ -106,8 +103,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 4px solid;
-    border-color: white;
+    border: 4px solid white;
     cursor: pointer; }
     .guitars .guitar4 .graciaph {
       display: flex;
@@ -121,8 +117,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 4px solid;
-    border-color: white;
+    border: 4px solid white;
     cursor: pointer; }
     .guitars .guitar5 .parquerph {
       display: flex;
@@ -136,8 +131,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 4px solid;
-    border-color: white;
+    border: 4px solid white;
     cursor: pointer; }
     .guitars .guitar6 .disbyteph {
       display: flex;
@@ -197,13 +191,15 @@ iframe {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    border: 4px solid white;
+    margin: 0 1em 0 1em; }
     .cart-list .fonseca .fonsecacart, .cart-list .gracia .fonsecacart, .cart-list .yamaha .fonsecacart {
       width: 22em; }
   .cart-list .gracia {
     grid-area: gracia; }
     .cart-list .gracia .graciacart {
-      width: 12em; }
+      width: 9em; }
   .cart-list .yamaha {
     grid-area: yamaha; }
     .cart-list .yamaha .yamahacart {

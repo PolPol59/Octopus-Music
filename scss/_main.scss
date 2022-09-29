@@ -81,8 +81,9 @@
    grid-row-gap: 1em;
   grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: 0.5fr 1fr;
-  grid-template-areas: "guitar1 guitar2 guitar3"
-                       " guitar4 guitar5 guitar6";
+  grid-template-areas:
+  "guitar1 guitar2 guitar3"
+  " guitar4 guitar5 guitar6";
 
 
 
@@ -237,6 +238,7 @@ iframe {
   list-style: none;
   text-decoration: none;
   font-size: 1.5em;
+  
 }
 
 .cart-list {
@@ -251,6 +253,8 @@ iframe {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: $borde;
+    margin: 0 1em 0 1em;
 
     .fonsecacart {
       width: 22em;
@@ -262,7 +266,7 @@ iframe {
     grid-area: gracia;
 
     .graciacart {
-      width: 12em;
+      width: 9em;
     }
 
   }
