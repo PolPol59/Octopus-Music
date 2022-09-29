@@ -70,7 +70,6 @@
 // PRODUCTOS
 
 .titulosec2 {
-  padding-bottom: 1em;
   font-size: 2em;
   color: $text-color;
   text-decoration: underline;
@@ -499,10 +498,9 @@ section {
 
     .header2 {
       grid-area: header2;
-      background-image: linear-gradient(to top, #99582a, #ffe6a7);
+      background-image:$background-color;
       display: flex;
       flex-direction: row-reverse;
-      justify-content: center;
    
       .logo-titulo {
         
@@ -532,11 +530,9 @@ section {
       flex-direction: column;
 
     .guitar1 {
+      @include guitar-responsive-order;
       margin-top: 2em;
       grid-area: guitar1;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
       grid-template-areas:
       "yamahaslgph"
       "guitar-title"
@@ -553,10 +549,8 @@ section {
     }
 
     .guitar2 {
+      @include guitar-responsive-order;
       grid-area: guitar2;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 0.4fr;
       grid-template-areas:
       "yamahaph"
       "guitar-title"
@@ -569,10 +563,8 @@ section {
     }
 
     .guitar3 {
+      @include guitar-responsive-order;
       grid-area: guitar3;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 0.4fr 0fr;
       grid-template-areas:
       "fonsecaph"
       "guitar-title"
@@ -594,10 +586,8 @@ section {
     }
 
     .guitar4 {
+      @include guitar-responsive-order;
       grid-area: guitar4;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 0.4fr 0fr;
       grid-template-areas:
       "graciaph"
       "guitar-title"
@@ -621,10 +611,8 @@ section {
     }
 
     .guitar5 {
+      @include guitar-responsive-order;
       grid-area: guitar5;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 0.4fr 0fr;
       grid-template-areas:
       "parquerph"
       "guitar-title"
@@ -638,10 +626,8 @@ section {
     }
 
     .guitar6 {
+      @include guitar-responsive-order;
       grid-area: guitar6;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 0.4fr 0fr;
       grid-template-areas:
       "disbyteph"
       "guitar-title"
@@ -677,80 +663,80 @@ section {
     }
   }
 
-}
-
-/*
-  // SUCURSALES 425PX
-  .sucursales {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-      "header3 ."
-      "header3 ."
-      "header3 ."
-      "header3 ."
-      "footer3 footer3 ";
 
 
-    .header3 {
-      grid-area: header3;
-      display: flex;
-      flex-direction: column;
-      background-image: linear-gradient(to right, #99582a, #ffe6a7);
 
-      .logo-titulo {
-        display: flex;
-        flex-wrap: wrap;
+// SUCURSALES 425PX
+.sucursales {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "header3"
+  "sucursalresp"
+  "footer3";
+  
+  
+  
+  .header3 {
+    grid-area: header3;
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: $background-color;
 
+    .logo-titulo {
 
-        .logo {
-          width: 0;
-          height: 0;
-        }
+        
+      .titulo{
+        font-size: 2em;
+        margin-top: 0.3em;
       }
-
-      .navbar2,
-      .navbar-text,
-      .navbar-select {
-        transition: none;
-        flex-direction: column;
-        font-size: 1.7em;
-        margin-top: 7em;
-      }
-
     }
-
+      nav {
+        font-size: 1.7em;
+      }
+      
+      .navbar-text {
+        transition: none;
+      }
+  }
+ 
+    
     .sucursal-responsive {
+      grid-area: sucursalresp;
       display: flex;
       flex-direction: column;
-
+      
       img {
-        width: 47.6em;
+        width: 26.5em;
       }
-
-
+      
+      
       iframe {
         transition: none;
-        width: 47.6em;
+        width: 26.5em;
       }
     }
-
+    
     .titulosuc {
-      font-size: $title-size;
+      font-size: $title-size-2;
     }
-
+    
     .direccion {
-      font-size: $title-size;
+      font-size: $title-size-2;
+      margin-top: 1.5em;
+      margin-bottom: 1em;
     }
-  }
-
+  
+  
   .footer3-responsive {
     grid-area: footer3;
-    width: 24.7em;
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
-
+}
+}
+  
+  /*
 
   // CARRITO 425PX
 

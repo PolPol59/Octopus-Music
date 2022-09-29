@@ -19,3 +19,9 @@
     justify-self: center;
     transition: none;
 }
+
+@mixin guitar-responsive-order () {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
