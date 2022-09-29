@@ -303,21 +303,16 @@ section .send {
       background-image: linear-gradient(to top, #99582a, #ffe6a7);
       display: flex;
       flex-direction: row-reverse; }
-      .index2 header .logo-titulo, .index header .logo-titulo {
-        grid-area: logo-titulo; }
-        .index2 header .logo-titulo .titulo, .index header .logo-titulo .titulo {
-          display: flex;
-          justify-content: left; }
-        .index2 header .logo-titulo .logo, .index header .logo-titulo .logo {
-          display: flex;
-          align-items: right; }
+      .index2 header .logo-titulo .titulo, .index header .logo-titulo .titulo {
+        margin-top: 0.3em;
+        font-size: 2em; }
+      .index2 header .logo-titulo .logo, .index header .logo-titulo .logo {
+        display: flex;
+        align-items: right; }
       .index2 header nav, .index header nav {
-        grid-area: navbar;
         font-size: 1.2em; }
       .index2 header .navbar-text, .index header .navbar-text {
         transition: none; }
-      .index2 header h1, .index header h1 {
-        font-size: 2em; }
     .index2 .bienvenido2, .index .bienvenido2 {
       animation: none;
       font-size: 1em;
@@ -334,175 +329,142 @@ section .send {
     background-size: cover; }
   .guitarras {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 0.1fr;
-    grid-template-areas: "header" "guitar1" "guitar2" "guitar3" "guitar4" "guitar5" "guitar6"; }
-    .guitarras .navbar-text {
-      transition: none; }
-    .guitarras .logo-titulo {
-      grid-area: logo-titulo; }
-      .guitarras .logo-titulo .titulo {
-        display: flex;
-        justify-content: left; }
-      .guitarras .logo-titulo .logo {
-        display: flex;
-        align-items: right; }
-    .guitarras .titulosec2-responsive {
-      color: aliceblue;
-      font-size: 3em; }
-    .guitarras .titulo2 {
-      font-size: 3em; }
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "header2" "guitar1" "guitar2" "guitar3" "guitar4" "guitar5" "guitar6" "footer2"; }
     .guitarras .header2 {
       grid-area: header2;
+      background-image: linear-gradient(to top, #99582a, #ffe6a7);
       display: flex;
-      flex-direction: column;
-      background-image: linear-gradient(to right, #99582a, #ffe6a7); }
-      .guitarras .header2 .logo-titulo {
-        margin-right: 0;
-        display: flex;
-        flex-wrap: wrap; }
-        .guitarras .header2 .logo-titulo .logo {
-          width: 0;
-          height: 0; }
-      .guitarras .header2 .navbar2 {
-        display: flex;
-        flex-direction: column;
-        font-size: 1.7em;
-        margin-top: 7em; }
+      flex-direction: row-reverse;
+      justify-content: center; }
+      .guitarras .header2 .logo-titulo .titulo {
+        font-size: 2em;
+        margin-top: 0.3em; }
+      .guitarras .header2 nav {
+        font-size: 1.7em; }
+      .guitarras .header2 .navbar-text {
+        transition: none; }
     .guitarras .titulosec2-responsive {
       display: flex;
       justify-content: center;
-      font-size: 5em; }
-    .guitarras .guitar1 {
-      margin-top: 2em;
-      grid-area: guitar1;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 0fr 0fr;
-      grid-template-areas: "yamahaslgph" "guitar1-text" "add"; }
-      .guitarras .guitar1 .guitar1-title {
-        font-size: 3em; }
-      .guitarras .guitar1 .yamahaslgph {
-        grid-area: yamahaslgph;
-        width: 18em;
-        display: flex;
-        justify-content: center;
-        justify-self: center;
-        flex-direction: column-reverse; }
-      .guitarras .guitar1 .guitar1-text {
-        grid-area: guitar1-text;
-        list-style: circle;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        font-size: 2em;
-        padding-bottom: 1em; }
-    .guitarras .guitar2 {
-      grid-area: guitar2;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 0.4fr;
-      grid-template-areas: "yamahaph" "guitar2-text" "add"; }
-      .guitarras .guitar2 .yamahaph {
-        grid-area: yamahaph;
-        width: 18em;
-        display: flex;
-        justify-content: center;
-        justify-self: center;
-        flex-direction: column-reverse; }
-      .guitarras .guitar2 .guitar2-text {
-        grid-area: guitar2-text;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        font-size: 2em;
-        padding-bottom: 1em; }
-    .guitarras .guitar3 {
-      grid-area: guitar3;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 0.4fr 0fr;
-      grid-template-areas: "fonsecaph" "guitar3-text" "add"; }
-      .guitarras .guitar3 .guitar3-text {
-        grid-area: guitar3-text;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        font-size: 2em;
-        padding-bottom: 1em; }
-      .guitarras .guitar3 .fonsecaph {
-        grid-area: fonsecaph;
-        width: 18em;
-        display: flex;
-        justify-content: center;
-        justify-self: center;
-        flex-direction: column-reverse; }
-    .guitarras .guitar4 {
-      grid-area: guitar4;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 0.4fr 0fr;
-      grid-template-areas: "graciaph" "guitar4-text" "add"; }
-      .guitarras .guitar4 .guitar4-text {
-        grid-area: guitar4-text;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        font-size: 2em;
-        padding-bottom: 1em; }
-      .guitarras .guitar4 .graciaph {
-        grid-area: graciaph;
-        width: 18em;
-        display: flex;
-        justify-content: center;
-        justify-self: center;
-        flex-direction: column-reverse; }
-    .guitarras .guitar5 {
-      grid-area: guitar5;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 0.4fr 0fr;
-      grid-template-areas: "parquerph" "guitar-text" "add"; }
-      .guitarras .guitar5 .parquerph {
-        grid-area: parquerph;
-        width: 18em;
-        display: flex;
-        justify-content: center;
-        justify-self: center;
-        flex-direction: column-reverse; }
-    .guitarras .precio, .guitarras .precio4 {
+      font-size: 2em; }
+    .guitarras .guitars {
+      display: flex;
+      flex-direction: column; }
+      .guitarras .guitars .guitar1 {
+        margin-top: 2em;
+        grid-area: guitar1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "yamahaslgph" "guitar-title" "add"; }
+        .guitarras .guitars .guitar1 .guitar1-title {
+          font-size: 3em; }
+        .guitarras .guitars .guitar1 .yamahaslgph {
+          grid-area: yamahaslgph;
+          width: 10em;
+          display: flex;
+          justify-content: center;
+          justify-self: center;
+          transition: none; }
+      .guitarras .guitars .guitar2 {
+        grid-area: guitar2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.4fr;
+        grid-template-areas: "yamahaph" "guitar-title" "add"; }
+        .guitarras .guitars .guitar2 .yamahaph {
+          grid-area: yamahaph;
+          width: 10em;
+          display: flex;
+          justify-content: center;
+          justify-self: center;
+          transition: none; }
+      .guitarras .guitars .guitar3 {
+        grid-area: guitar3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.4fr 0fr;
+        grid-template-areas: "fonsecaph" "guitar-title" "add"; }
+        .guitarras .guitars .guitar3 .guitar3-text {
+          grid-area: guitar3-text;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          font-size: 2em;
+          padding-bottom: 1em; }
+        .guitarras .guitars .guitar3 .fonsecaph {
+          grid-area: fonsecaph;
+          width: 10em;
+          display: flex;
+          justify-content: center;
+          justify-self: center;
+          transition: none; }
+      .guitarras .guitars .guitar4 {
+        grid-area: guitar4;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.4fr 0fr;
+        grid-template-areas: "graciaph" "guitar-title" "add"; }
+        .guitarras .guitars .guitar4 .guitar4-text {
+          grid-area: guitar4-text;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          font-size: 2em;
+          padding-bottom: 1em; }
+        .guitarras .guitars .guitar4 .graciaph {
+          grid-area: graciaph;
+          width: 10em;
+          display: flex;
+          justify-content: center;
+          justify-self: center;
+          transition: none;
+          width: 8em; }
+      .guitarras .guitars .guitar5 {
+        grid-area: guitar5;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.4fr 0fr;
+        grid-template-areas: "parquerph" "guitar-title" "add"; }
+        .guitarras .guitars .guitar5 .parquerph {
+          grid-area: parquerph;
+          width: 10em;
+          display: flex;
+          justify-content: center;
+          justify-self: center;
+          transition: none;
+          width: 7em; }
+      .guitarras .guitars .guitar6 {
+        grid-area: guitar6;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.4fr 0fr;
+        grid-template-areas: "disbyteph" "guitar-title" "add"; }
+        .guitarras .guitars .guitar6 .disbyteph {
+          grid-area: disbyteph;
+          width: 10em;
+          display: flex;
+          justify-content: center;
+          justify-self: center;
+          transition: none;
+          width: 8em; }
+    .guitarras .precio {
       grid-area: precio;
       font-size: 2em;
       margin-right: 0;
       display: flex;
-      justify-content: center;
-      align-self: center;
-      flex-direction: column;
-      padding-top: 0; }
-    .guitarras .precio4-2 {
-      font-size: 2em;
-      margin-right: 0.5em;
-      display: flex;
-      justify-content: center;
-      padding-top: 0em; }
+      align-items: center; }
     .guitarras .add, .guitarras .add2 {
-      font-size: 2em;
-      grid-area: add;
-      display: flex;
-      justify-content: center;
-      font-stretch: extra-expanded;
-      margin-right: 0.1em; }
-    .guitarras .add2-425 {
       font-size: 1.5em;
       grid-area: add;
       display: flex;
-      padding-bottom: 1em;
       justify-content: center;
-      font-stretch: extra-expanded;
-      margin-right: 2em; }
-  .footer2 {
-    grid-area: footer2;
-    font-size: 2.5em; } }
+      font-stretch: extra-expanded; }
+    .guitarras .footer2 {
+      grid-area: footer2;
+      font-size: 1.5em; } }
 
 /*
   // SUCURSALES 425PX
@@ -1007,7 +969,7 @@ footer {
   font-stretch: extra-expanded;
   justify-self: center; }
 
-.precio, .precio4 {
+.precio {
   font-size: 1.3em;
   display: flex;
   justify-content: center; }

@@ -13,9 +13,9 @@
 }
 
 @mixin guitar-responsive-photo () {
-    width: 18em;
+    width: 10em;
     display: flex;
     justify-content: center;
     justify-self: center;
-    flex-direction: column-reverse;
+    transition: none;
 }
