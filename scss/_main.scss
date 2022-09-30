@@ -671,6 +671,8 @@ section {
 
 
 // SUCURSALES 425PX
+
+
 .sucursales {
   display: grid;
   grid-template-columns: 1fr;
@@ -738,101 +740,111 @@ section {
     font-size: 1.5em;
   }
 }
-}
+
   
-  /*
 
-  // CARRITO 425PX
+// CARRITO 425PX
 
-  .carrito {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-      "header4 fonseca"
-      "header4 gracia"
-      "header4 yamaha"
-      "header4 iconos";
-
-
-    .header4 {
-      grid-area: header4;
-      display: flex;
-      flex-direction: column;
-      background-image: linear-gradient(to right, #99582a, #ffe6a7);
-
-      .logo-titulo {
+.carrito {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "header4"
+  "main"
+  "cartlist"
+  "footer4";
+      
+      
+      .header4 {
+        grid-area: header4;
         display: flex;
-        flex-wrap: wrap;
-      }
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        background-image: linear-gradient(to right, #99582a, #ffe6a7);
+        
+        .logo-titulo {
+          display: flex;
+          justify-content: space-around;
+        
+          .titulo{
+            font-size: 2em;
+            margin-top: 0.3em;
+          }
 
-      .logo {
-        width: 0;
-        height: 0;
+        }
+          nav {
+            font-size: 1.7em;
+            transition: none;
+            display: flex;
+            flex-direction: column;;
+          }
+          
+          .navbar-text {
+            transition: none;
+          }
       }
-
-      h1 {
-        font-size: 2em;
+        
+        h1 {
+          font-size: 2em;
         text-align: center;
       }
 
-      .navbar2,
-      .navbar-text,
-      .navbar-select {
-        transition: none;
+      main{
+        grid-area: main;
         display: flex;
         flex-direction: column;
-        font-size: 1.5em;
-        margin-top: 6em;
-      }
-    }
-
+    
     .cart-list-responsive {
+      grid-area: cartlist;
       display: flex;
       flex-direction: column;
 
       .guitar-name-responsive {
         font-size: 2.5em;
       }
-
+      
       .cart-button-responsive {
         font-size: 3em;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
       }
     }
-
+    
     .envio-retiro-responsive {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-
+      
       .retiro-sucursal-responsive-425 {
         margin-right: 0;
         margin-left: 0;
       }
-
+      
       .text-responsive {
         font-size: 2em;
       }
-
+      
       .sucursal-name-responsive {
         font-size: 3em;
       }
     }
-
+    
     .action-button-responsive {
-      font-size: 2em;
+      font-size: 1.5em;
+      flex-direction: column;
       justify-content: center;
+      align-self: center;
     }
+  } 
+}
 
-  }
-
-  .footer4 {
-    grid-area: footer4;
-    width: 18.6em;
-  }
+.footer4 {
+  grid-area: footer4;
+}
+}
+/*
 
   // CONTACTO 425PX
 
