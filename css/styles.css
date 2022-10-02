@@ -64,7 +64,7 @@
     border: 4px solid white;
     cursor: pointer; }
     .guitars .guitar1 .yamahaslgph {
-      width: 13em;
+      width: 12em;
       display: flex;
       flex-direction: column;
       transition: width 0.7s, height 0.7s; }
@@ -314,8 +314,8 @@ section .send {
       .index2 header .navbar-text,
       .index header .navbar-text {
         transition: none; }
-    .index2 .bienvenido2,
-    .index .bienvenido2 {
+    .index2 .bienvenido,
+    .index .bienvenido {
       animation: none;
       font-size: 1em;
       display: flex;
@@ -337,19 +337,19 @@ section .send {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "header2" "guitar1" "guitar2" "guitar3" "guitar4" "guitar5" "guitar6" "footer2"; }
-    .guitarras .header2 {
+    .guitarras header {
       grid-area: header2;
       background-image: linear-gradient(to top, #99582a, #ffe6a7);
       display: flex;
       flex-direction: row-reverse; }
-      .guitarras .header2 .logo-titulo .titulo {
+      .guitarras header .logo-titulo .titulo {
         font-size: 2em;
         margin-top: 0.3em; }
-      .guitarras .header2 nav {
+      .guitarras header nav {
         font-size: 1.7em; }
-      .guitarras .header2 .navbar-text {
+      .guitarras header .navbar-text {
         transition: none; }
-    .guitarras .titulosec2-responsive {
+    .guitarras .titulosec2 {
       display: flex;
       justify-content: center;
       font-size: 2em; }
@@ -501,7 +501,7 @@ section .send {
       font-size: 2.5em;
       margin-top: 1.5em;
       margin-bottom: 1em; }
-    .sucursales .footer3-responsive {
+    .sucursales .footer3 {
       grid-area: footer3;
       font-size: 1.5em; }
   .carrito {
@@ -514,7 +514,7 @@ section .send {
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-around;
-      background-image: linear-gradient(to right, #99582a, #ffe6a7); }
+      background-image: linear-gradient(to top, #99582a, #ffe6a7); }
       .carrito .header4 .logo-titulo .titulo {
         font-size: 2em;
         margin-top: 0.3em; }
@@ -575,7 +575,7 @@ section .send {
       grid-area: header5;
       display: flex;
       flex-direction: row-reverse;
-      background-image: linear-gradient(to right, #99582a, #ffe6a7); }
+      background-image: linear-gradient(to top, #99582a, #ffe6a7); }
       .contacto-responsive .header5 .logo-titulo .titulo {
         font-size: 2em;
         margin-top: 0.3em; }
@@ -634,6 +634,8 @@ section .send {
     flex-direction: column; }
     .sucursal-responsive-768 .img-responsive-768 {
       width: 48em; }
+    .sucursal-responsive-768 .iframe-responsive-768 {
+      width: 48em; }
   .carrito-768 .cart-list-responsive-768 {
     display: flex;
     flex-direction: column; }
@@ -661,7 +663,7 @@ section .send {
     justify-content: center; } }
 
 @media only screen and (max-width: 1024px) {
-  .header-1024 .logo-titulo-1024 .titulo {
+  .header-1024 .logo-titulo .titulo {
     margin-top: 0.3em;
     font-size: 2em; }
   .guitars {
@@ -696,7 +698,7 @@ header {
       height: 4em;
       grid-area: logo;
       background-color: none; }
-  header .navbar, header .navbar-select, header .navbar2 {
+  header .navbar, header .navbar-select {
     display: flex;
     justify-content: space-between;
     font-size: 20px;

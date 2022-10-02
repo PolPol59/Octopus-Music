@@ -33,10 +33,6 @@ header {
         font-weight: bold;
     }
 
-    .navbar2 {
-        @extend .navbar;
-    }
-
     .navbar-text {
         margin-right: 2em;
         font-size: 20px;
