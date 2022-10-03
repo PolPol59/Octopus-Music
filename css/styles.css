@@ -425,7 +425,7 @@ section .send {
           justify-content: center;
           justify-self: center;
           transition: none;
-          width: 8em; }
+          width: 6em; }
       .guitarras .guitars .guitar5 {
         display: grid;
         grid-template-columns: 1fr;
@@ -467,8 +467,7 @@ section .send {
       justify-content: center;
       font-stretch: extra-expanded; }
     .guitarras .footer2 {
-      grid-area: footer2;
-      font-size: 1.5em; }
+      grid-area: footer2; }
   .sucursales {
     display: grid;
     grid-template-columns: 1fr;

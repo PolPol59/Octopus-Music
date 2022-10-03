@@ -611,7 +611,7 @@ section {
         .graciaph {
           grid-area: graciaph;
           @include guitar-responsive-photo;
-          width: 8em;
+          width: 6em;
         }
 
       }
@@ -665,7 +665,6 @@ section {
 
     .footer2 {
       grid-area: footer2;
-      font-size: 1.5em;
     }
   }
 
